@@ -1,4 +1,16 @@
-<ngx-slick-carousel class="carousel" 
+<div class="app-root">
+
+  <div class="header">
+      <app-header></app-header>
+  </div>
+
+  <div class="hot-games">
+    <app-hot-games></app-hot-games>
+  </div>
+
+
+</div>
+<!-- <ngx-slick-carousel class="carousel" 
 #slickModal="slick-carousel" 
 [config]="slideConfig" 
 (init)="slickInit($event)"
@@ -8,4 +20,4 @@
 <div ngxSlickItem *ngFor="let slide of slides" class="slide">
 <img src="{{ slide.img }}" alt="" width="100%">
 </div>
-</ngx-slick-carousel>
+</ngx-slick-carousel> -->

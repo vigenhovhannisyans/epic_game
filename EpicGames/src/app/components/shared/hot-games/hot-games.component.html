@@ -1,0 +1,11 @@
+<div class="container hot-games">
+    <div class="image-side">
+        <img [src]="selectedGameImageUrl" alt="" class="selected-img">
+    </div>
+    <div class="games-side">
+        <div (click)="selectGame(game,i)" [ngClass]="{'active': selectedIndex === i}" *ngFor="let game of allGames; let i = index" class="game">
+            <img class="game-img" [src]="game.image_url" alt="">
+            <span class="game-name">{{game.title}}</span>
+        </div>
+    </div>
+</div>

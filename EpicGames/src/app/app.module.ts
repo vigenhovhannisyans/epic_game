@@ -8,12 +8,14 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { HotGamesComponent } from './components/shared/hot-games/hot-games.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    HotGamesComponent
   ],
   imports: [
     BrowserModule,

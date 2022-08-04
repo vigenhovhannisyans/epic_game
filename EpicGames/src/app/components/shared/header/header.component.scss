@@ -1,0 +1,37 @@
+.header{
+    .header-side{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .right-side{
+            .options-ul{
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                .list{
+                    padding: 15px;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 15px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                    .icon{
+                        margin-right: 10px;
+                    }
+                    .user-name{
+                        font-weight: 500;
+                        color: #E7E7E7;
+                        font-size: 14px;
+                    }
+                    &.login{
+                        padding: 15px 50px;
+                        background-color:#007AFF;
+                    }
+                }
+            }
+        }
+    }
+}
