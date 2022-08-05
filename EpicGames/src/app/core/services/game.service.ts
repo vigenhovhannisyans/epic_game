@@ -10,10 +10,10 @@ export class GameService {
       id: 1,
       image_url: '../../../../assets/images/games/game.svg',
       title: 'Little Tina Fantasy Land',
-      about_game: 'Sanatruk',
+      about_game: 'Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Coming',
       operation_system_id:[1],
       price: 150,
-      category: 'Sanatruk',
+      category: 'Fantasy',
       cover_image_path: '../../../../assets/images/games/cover-1.svg',
     },
     {

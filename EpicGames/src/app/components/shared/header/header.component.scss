@@ -5,6 +5,7 @@
         align-items: center;
         .right-side{
             .options-ul{
+                overflow-y: hidden;
                 display: flex;
                 align-items: center;
                 list-style-type: none;
@@ -29,6 +30,87 @@
                     &.login{
                         padding: 15px 50px;
                         background-color:#007AFF;
+                    }
+                }
+                .language{
+                    position: absolute;
+                    height: 125px;
+                    width: 157px;
+                    border-radius: 5px;
+                    z-index: 9;
+                    background-color: #505050;
+                    transform: translate(9px, -777px);
+                    transition: all .5s;
+                    padding: 5px;
+                    &.active{
+                        transform: translate(9px, 77px);
+                    }
+                    .language-item{
+                        border-radius: 5px;
+                        transition: all .5s;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: white;
+                        display: block;
+                        padding: 5px;
+                        margin-bottom: 5px;
+                        padding-left: 10px;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: #007AFF;
+                        }
+                        &.active{
+                            background-color: #007AFF;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .left-side{
+            display: flex;
+            align-items: center;
+            .nav-side{
+                display: flex;
+                align-items: center;
+                .item{
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 500;
+                    position: relative;
+                    margin-left: 20px;
+                    &:hover{
+                        cursor: pointer;
+                        .line{
+                        width: 100%;
+                    }
+                    }
+                    &.active{
+                        .line{
+                            width: 100%;
+                        }
+                    }
+                    .line{
+                        width: 0%;
+                        height: 4px;
+                        background-color: #007AFF;
+                        display: block;
+                        transition: all .5s;
+                        border-radius: 5px;
+                    }
+                    .live{
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        background-color: red;
+                        border-radius: 5px;
+                        padding: 1px;
+                        font-size: 10px;
+                        width: 30px;
+                        transform: translate(26px, -9px);
+                        text-align: center;
                     }
                 }
             }

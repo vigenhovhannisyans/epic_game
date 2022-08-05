@@ -1,11 +1,29 @@
-<div class="header">
+<div (ngxOutsideClick)="outsideClick()" class="header">
     <div class="container header-side">
         <div class="left-side">
             <img src="../../../../assets/images/icons/logo.svg" alt="">
+            <div class="nav-side">
+                <a class="item active">
+                    Home
+                    <span class="line"></span>
+                </a>
+
+                <a class="item">
+                    All Games
+                    <span class="line"></span>
+                </a>
+
+                <a class="item">
+                    Live Streams
+                    <span class="live">Live</span>
+                    <span class="line"></span>
+                </a>
+
+            </div>
         </div>
         <div class="right-side">
             <ul class="options-ul">
-                <li class="list">
+                <li (click)="showLanguageBlock()" class="list">
                     <img class="icon" src="../../../../assets/images/icons/language.svg" alt="">
                 </li>
 
@@ -16,6 +34,11 @@
 
                 <li class="list login">
                     <span class="user-name">Login</span>
+                </li>
+                <li [ngClass]="{'active': showLanguage}" class="language">
+                    <span class="language-item active">English</span>
+                    <span class="language-item">Russian</span>
+                    <span class="language-item">Armenian</span>
                 </li>
             </ul>
         </div>

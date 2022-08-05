@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
+import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
+import { NgxOutsideClickModule } from 'ngx-outside-click';
+
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
@@ -18,10 +22,14 @@ import { HotGamesComponent } from './components/shared/hot-games/hot-games.compo
     HotGamesComponent
   ],
   imports: [
+    BrowserAnimationsModule,
+    NgxOutsideClickModule,
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
