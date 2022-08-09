@@ -7,7 +7,8 @@
 (breakpoint)="breakpoint($event)"
 (afterChange)="afterChange($event)"
 (beforeChange)="beforeChange($event)">
-<div ngxSlickItem *ngFor="let game of allGames" class="slide" (click)="showMoreAboutGame(game.id)">
+<ng-container *ngFor="let game of allGames">
+<div *ngIf="game.sale" ngxSlickItem  class="slide" (click)="showMoreAboutGame(game.id)">
 <img [src]="game.image_url" alt="" width="100%">
 <span class="title">{{game.title}}</span>
 <div class="price">
@@ -18,6 +19,7 @@
 </ng-container>
 </div>
 </div>
+</ng-container>
 </ngx-slick-carousel>
 
 

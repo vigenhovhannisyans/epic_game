@@ -1,7 +1,7 @@
 <app-search (searchValueEmitter)="searchGame($event)"></app-search>
 <div class="all-games container">
     <ng-container *ngIf="!isSearch; else searched">
-    <div *ngFor="let game of allGames" class="game">
+    <div *ngFor="let game of allGames" class="game" (click)="redirectToAboutGamePage(game.id)">
         <div *ngIf="game.sale" class="sale">
             <span class="sale-percent">- {{game.sale}}%</span>
         </div>
@@ -26,7 +26,7 @@
 <div *ngIf="filteredGames?.length === 0 && isSearch" class="no-result">OOPS` We don't have such a game</div>
 
 <ng-template #searched>
-    <div *ngFor="let game of filteredGames" class="game">
+    <div *ngFor="let game of filteredGames" class="game" (click)="redirectToAboutGamePage(game.id)">
         <div *ngIf="game.sale" class="sale">
             <span class="sale-percent">- {{game.sale}}%</span>
         </div>

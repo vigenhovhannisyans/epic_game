@@ -19,7 +19,6 @@ export class AllGamesComponent implements OnInit {
     this.getAllGames()
   }
 
-
   getAllGames(): void{
     this.allGamesService.getAllGames().subscribe(gameEvent=>[
       this.allGames = gameEvent
@@ -34,6 +33,10 @@ export class AllGamesComponent implements OnInit {
     this.isSearch = true
     console.log(event);
     this.filteredGames = this.allGames.filter(game => game.title.toLocaleLowerCase().includes(event))
+  }
+  
+  redirectToAboutGamePage(id: number): void{
+    this.allGamesService.redirectToAboutGamePage(id);
   }
 
 }
