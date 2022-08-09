@@ -21,14 +21,14 @@
 </ngx-slick-carousel>
 
 
-<div class="epic-game-side">
+<div class="live-game-side">
     <span class="category-title">Live Streams</span>
     <div class="game-side">
         <ng-container *ngFor="let liveGames of allGames">
         <div *ngIf="liveGames.has_live" class="game">
             <a class="watch-live" [href]="liveGames.live_stream_url" target="_blank">Watch Live</a>
             <div class="game-img">
-            <img class="img" [src]="liveGames.image_url">
+            <img class="img" [src]="liveGames.cover_image_path">
         </div>
         <span class="title">{{liveGames.title}}</span>
         </div>
@@ -36,6 +36,27 @@
     </div>
 </div>
 
+<div class="epic-games">
+    <span class="category-title">Epic Games</span>
 
+    <ngx-slick-carousel class="carousel" 
+#slickModal="slick-carousel" 
+[config]="slideConfig" 
+(init)="slickInit($event)"
+(breakpoint)="breakpoint($event)"
+(afterChange)="afterChange($event)"
+(beforeChange)="beforeChange($event)">
+<div ngxSlickItem *ngFor="let game of epicGames" class="slide" (click)="showMoreAboutGame(game.id)">
+<img [src]="game.image_url" alt="" width="100%">
+<span class="title">{{game.title}}</span>
+<div class="price">
+    <ng-container>
+    <span class="epic">Epic</span>
+    <span class="game-price">{{game.price}}$</span>
+</ng-container>
+</div>
+</div>
+</ngx-slick-carousel>
+</div>
 
 </div>

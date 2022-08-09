@@ -39,7 +39,17 @@
                 border-radius: 4px;
                 text-align: center;
                 color: white;
-                font-weight: 50;
+                font-weight: 500;
+            }
+            .epic{
+                display: block;
+                width: 80px;
+                height: 24px;
+                background: #6f6f6f7a;
+                border-radius: 3px;
+                text-align: center;
+                color: white;
+                font-weight: 500;
             }
             .game-price{
                 margin-left: 10px;
@@ -73,13 +83,15 @@
     }
     }
     }
-    .epic-game-side{
+    .live-game-side{
         margin-top: 30px;
         .game-side{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
             .game{
+                margin-bottom: 30px;
                 width: 49%;
                 height: 430px;
                 position: relative;
@@ -117,6 +129,7 @@
                     overflow: hidden;
                     border-radius: 10px;
                 .img{
+                    object-fit: cover;
                     border-radius: 10px;
                     height: 400px;
                     width: 100%;
@@ -130,5 +143,8 @@
                 }
             }
         }
+    }
+    .epic-games{
+        margin-top: 50px;
     }
 }

@@ -1,8 +1,8 @@
 .footer{
     margin-top: 77px;
     background: #202020;
-    height: 411px;
-    padding: 70px;
+    min-height: 250px;
+    padding: 22px;
     .container{
         .sections{
             display: flex;
@@ -20,6 +20,7 @@
                     font-weight: 500;
                     margin-bottom: 15px;
                     transition: all .5s;
+                    width: max-content;
                     &:hover{
                         cursor: pointer;
                         color:#007AFF;

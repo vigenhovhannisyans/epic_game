@@ -8,7 +8,6 @@ import { WishlistService } from './core/services/wishlist.service';
 })
 export class AppComponent implements OnInit {
   title = 'EpicGames';
-
   constructor(
     private wishListService: WishlistService,
 

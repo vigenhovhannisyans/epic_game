@@ -18,7 +18,7 @@
     {
         "id": 2,
         "has_live": false,
-        "is_epic": true,
+        "is_epic": false,
         "image_url": "../../../../assets/images/games/game-1.svg",
         "title": "Stifu",
         "about_game": "Sifu is an action beat 'em up video game developed and published by French studio Sloclap. Set in modern-day China, players control the child of a martial arts school's sifu who seeks revenge on those responsible for their father's death.",
@@ -34,7 +34,7 @@
     {
         "id": 3,
         "has_live": false,
-        "is_epic": true,
+        "is_epic": false,
         "image_url": "../../../../assets/images/games/game-3.svg",
         "title": "Red Dead Redemption 2",
         "about_game": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption",
@@ -82,7 +82,7 @@
     {
         "id": 6,
         "has_live": false,
-        "is_epic": true,
+        "is_epic": false,
         "image_url": "../../../../assets/images/games/game-6.svg",
         "title": "Vampire: The Masquerade",
         "about_game": "Vampire was inspired by role-playing games (RPGs) such as Call of Cthulhu, RuneQuest, and Nightlife, as well as the writings of Joseph Campbell and vampire films such as The Lost Boys.",
@@ -161,7 +161,7 @@
     },
     {
         "id": 11,
-        "is_epic": true,
+        "is_epic": false,
         "has_live": true,
         "live_stream_url":"https://www.twitch.tv/directory/game/Fortnite",
         "image_url": "../../../../assets/images/games/game-11.jpg",
@@ -178,7 +178,7 @@
     },
     {
         "id": 12,
-        "is_epic": true,
+        "is_epic": false,
         "has_live": true,
         "live_stream_url":"https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V",
         "image_url": "../../../../assets/images/games/game-12.jpg",
@@ -192,6 +192,103 @@
             "Fantasy"
         ],
         "cover_image_path": "../../../../assets/images/games/game-12.jpg"
+    },
+    {
+        "id": 13,
+        "is_epic": true,
+        "has_live": false,
+        "image_url": "../../../../assets/images/games/game-13.svg",
+        "title": "Insurgency",
+        "about_game": "Insurgency is a multiplayer tactical first-person shooter video game developed and published by New World Interactive. It is a standalone sequel to Insurgency:",
+        "operation_system_id": [1,2],
+        "price": 300,
+        "sale": 0,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-13.svg"
+    },
+    {
+        "id": 14,
+        "is_epic": true,
+        "has_live": false,
+        "image_url": "../../../../assets/images/games/game-14.svg",
+        "title": "Wildcat",
+        "about_game": "The wildcat is a species complex comprising two small wild cat species: the European wildcat and the African wildcat.",
+        "operation_system_id": [1],
+        "price": 500,
+        "sale": 0,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-14.svg"
+    },
+    {
+        "id": 15,
+        "is_epic": true,
+        "has_live": false,
+        "image_url": "../../../../assets/images/games/game-15.svg",
+        "title": "Rogue",
+        "about_game": "Rogue is a dungeon crawling video game by Michael Toy and Glenn Wichman with later contributions by Ken Arnold",
+        "operation_system_id": [1,2],
+        "price": 100,
+        "sale": 0,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-15.svg"
+    },
+    {
+        "id": 16,
+        "is_epic": true,
+        "has_live": false,
+        "image_url": "../../../../assets/images/games/game-16.svg",
+        "title": "StarTrek",
+        "about_game": "James T Kirk, who is the captain of the Starship Enterprise, explores the whole galaxy with his crew and goes on several adventures as they fight evil forces together.",
+        "operation_system_id": [1],
+        "price": 1000,
+        "sale": 0,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-16.svg"
+    },
+    {
+        "id": 17,
+        "is_epic": true,
+        "has_live": true,
+        "image_url": "../../../../assets/images/games/game-17.svg",
+        "title": "Zombie Army",
+        "about_game": "Sniper Elite is a tactical shooter video game series developed by Rebellion Developments. It is a third-person tactical shooter that emphasises a less direct approach to combat, encouraging the player as a sniper to use stealth and keep distance from enemy soldiers.",
+        "operation_system_id": [1,2],
+        "price": 1000,
+        "sale": 0,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-17.svg"
+    },
+    {
+        "id": 18,
+        "is_epic": true,
+        "has_live": true,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Dying%20Light",
+        "image_url": "../../../../assets/images/games/game-18.svg",
+        "title": "Dying Light",
+        "about_game": "Sniper Elite is a tactical shooter video game series developed by Rebellion Developments. It is a third-person tactical shooter that emphasises a less direct approach to combat, encouraging the player as a sniper to use stealth and keep distance from enemy soldiers.",
+        "operation_system_id": [1,2],
+        "price": 1000,
+        "sale": 0,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-18.svg"
     }
     
 ]

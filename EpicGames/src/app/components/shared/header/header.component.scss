@@ -80,6 +80,7 @@
                     font-weight: 500;
                     position: relative;
                     margin-left: 20px;
+                    transition: all .5s;
                     &:hover{
                         cursor: pointer;
                         .line{

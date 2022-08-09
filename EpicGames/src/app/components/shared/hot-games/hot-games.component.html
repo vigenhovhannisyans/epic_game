@@ -8,10 +8,12 @@
         </div>
     </div>
     <div class="games-side">
-        <div (click)="selectGame(game,i)" [ngClass]="{'active': selectedIndex === i}" *ngFor="let game of allGames; let i = index" class="game">
+        <ng-container *ngFor="let game of allGames; let i = index">
+        <div *ngIf="i < 7" (click)="selectGame(game,i)" [ngClass]="{'active': selectedIndex === i}"  class="game">
             <img class="game-img" [src]="game.image_url" alt="">
             <span class="game-name">{{game.title}}</span>
         </div>
+        </ng-container>
     </div>
 </div>
 
