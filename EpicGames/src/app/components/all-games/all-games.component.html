@@ -1,0 +1,46 @@
+<app-search (searchValueEmitter)="searchGame($event)"></app-search>
+<div class="all-games container">
+    <ng-container *ngIf="!isSearch; else searched">
+    <div *ngFor="let game of allGames" class="game">
+        <div *ngIf="game.sale" class="sale">
+            <span class="sale-percent">- {{game.sale}}%</span>
+        </div>
+        <img class="img" [src]="game.image_url" alt="">
+        <div class="price-and-title">
+            <span class="title">{{game.title}}</span>
+            <ng-container *ngIf="game.sale;else noSale">
+            
+            <span class="price">Old price: <span class="minus-price">{{game.price}}$</span></span>
+            <span class="price">New price: {{calculateSale(game.price, game.sale)}}$</span>
+            </ng-container>
+            <ng-template #noSale>
+                <span class="price">price: {{game.price}}$</span>
+            </ng-template>
+        </div>
+    </div>
+    </ng-container>
+    <div class="game empty"></div>
+    <div class="game empty"></div>
+    <div class="game empty"></div>
+</div>
+
+<ng-template #searched>
+    <div *ngFor="let game of filteredGames" class="game">
+        <div *ngIf="game.sale" class="sale">
+            <span class="sale-percent">- {{game.sale}}%</span>
+        </div>
+        <img class="img" [src]="game.image_url" alt="">
+        <div class="price-and-title">
+            <span class="title">{{game.title}}</span>
+            <ng-container *ngIf="game.sale;else noSale">
+            
+            <span class="price">Old price: <span class="minus-price">{{game.price}}$</span></span>
+            <span class="price">New price: {{calculateSale(game.price, game.sale)}}$</span>
+            </ng-container>
+            <ng-template #noSale>
+                <span class="price">price: {{game.price}}$</span>
+            </ng-template>
+        </div>
+    </div>
+</ng-template>
+

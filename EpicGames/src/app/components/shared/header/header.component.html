@@ -2,13 +2,13 @@
     <div class="container header-side">
         <div class="left-side">
             <img src="../../../../assets/images/icons/logo.svg" alt="">
-            <div class="nav-side">
-                <a class="item active">
+            <div  class="nav-side">
+                <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/home" class="item">
                     Home
                     <span class="line"></span>
                 </a>
 
-                <a class="item">
+                <a routerLink="/all-games" routerLinkActive="active" class="item">
                     All Games
                     <span class="line"></span>
                 </a>

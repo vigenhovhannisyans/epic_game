@@ -14,13 +14,18 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { HotGamesComponent } from './components/shared/hot-games/hot-games.component';
+import { SearchComponent } from './components/shared/search/search.component';
+import { AllGamesComponent } from './components/all-games/all-games.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    HotGamesComponent
+    HotGamesComponent,
+    SearchComponent,
+    AllGamesComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -32,6 +37,8 @@ import { HotGamesComponent } from './components/shared/hot-games/hot-games.compo
     SlickCarouselModule,
     HttpClientModule,
     ToastrModule.forRoot(),
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

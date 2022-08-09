@@ -72,7 +72,7 @@
         "about_game": "Kena: Bridge of Spirits is a 2021 action-adventure video game developed and published by Ember Lab. The story follows Kena, a young spirit guide who uses her magical abilities to help deceased people move from the physical to the spirit world. The game is presented through a third-person perspective.",
         "operation_system_id": [1,2],
         "price": 100,
-        "sale": 5,
+        "sale": 50,
         "category": [
             "Action",
             "Fantasy"
@@ -88,7 +88,7 @@
         "about_game": "Vampire was inspired by role-playing games (RPGs) such as Call of Cthulhu, RuneQuest, and Nightlife, as well as the writings of Joseph Campbell and vampire films such as The Lost Boys.",
         "operation_system_id": [1],
         "price": 300,
-        "sale": 2,
+        "sale": 25,
         "category": [
             "Action",
             "Fantasy"
@@ -104,7 +104,7 @@
         "about_game": "A once-peaceful kingdom is plunged into chaos by encroaching tides of Mages: merciless embodiments of elemental chaos. The Marked Inquisitors, a doomed force of the condemned, once again mobilizes to stand against the existential threat of Magic. A buried secret threatens to bring an ancient empire to utter ruin.",
         "operation_system_id": [1],
         "price": 200,
-        "sale": 3,
+        "sale": 30,
         "category": [
             "Action",
             "Fantasy"
@@ -169,7 +169,7 @@
         "about_game": "Fortnite is the completely free online game where you and your friends fight to be the last one standing in Battle Royale",
         "operation_system_id": [1],
         "price": 200,
-        "sale": 30,
+        "sale": 35,
         "category": [
             "Action",
             "Fantasy"
@@ -186,7 +186,7 @@
         "about_game": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV",
         "operation_system_id": [1],
         "price": 200,
-        "sale": 30,
+        "sale": 40,
         "category": [
             "Action",
             "Fantasy"

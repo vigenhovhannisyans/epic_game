@@ -1,0 +1,24 @@
+.search-side{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    .search{
+        outline: none;
+        background: #202020;
+        border-radius: 200px;
+        color: #A0A0A0;
+        padding: 0 50px;
+        border: none;
+        height: 40px;
+        width: 300px;
+        min-width: 200px;
+    }
+    .search-icon{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 17px;
+        transform: translate(20px, -10px);
+    }
+}
