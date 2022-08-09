@@ -1,0 +1,134 @@
+.home{
+    padding-top: 50px;
+   .category-title{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+   }
+    .slick-slide {
+        margin: 0 17px;
+    }
+    /* the parent */
+    .slick-list {
+        margin: 0 -17px;
+    }
+    .slide{
+        display: flex;
+        flex-direction: column;
+        transition: all .5s;
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0px 0px 6px 0px #ffffff47;
+        }
+        .title{
+            color: white;
+            display: block;
+            margin-top: 10px;
+            white-space: nowrap;
+        }
+        .price{
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            .sale{
+                display: block;
+                width: 55px;
+                height: 24px;
+                background: #0074E4;
+                border-radius: 4px;
+                text-align: center;
+                color: white;
+                font-weight: 50;
+            }
+            .game-price{
+                margin-left: 10px;
+                color: white;
+            }
+            .minus-price{
+                color: white;
+                opacity: 0.6;
+                margin-left: 10px;
+                text-decoration: line-through;
+            }
+        }
+    }
+    ::ng-deep{
+    .carousel{
+    .slick-prev{
+        margin-left: 100%;
+        top: 0;
+        transform: translate(-60px, -35px);
+        &::before{
+                font-size: 27px;
+        }
+    }
+    .slick-next{
+        margin-left: 100%;
+        top: 0;
+        transform: translate(-45px, -35px);
+        &::before{
+                font-size: 27px;
+        }
+    }
+    }
+    }
+    .epic-game-side{
+        margin-top: 30px;
+        .game-side{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .game{
+                width: 49%;
+                height: 430px;
+                position: relative;
+                overflow: hidden;
+                .watch-live{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -900%);
+                    display: block;
+                    height: 40px;
+                    background-color: #0074E4;
+                    z-index: 9;
+                    width: 200px;
+                    border-radius: 4px;
+                    padding: 4px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: white;
+                    text-align: center;
+                    transition: all .5s;
+                    text-decoration: none;
+                }
+                &:hover{
+                    .watch-live{
+                        cursor: pointer;
+                        transform: translate(-50%, -50%);
+                    }
+                    .img{
+                        transform: scale(1.1);
+                        opacity: 0.8;
+                    }
+                }
+                .game-img{
+                    overflow: hidden;
+                    border-radius: 10px;
+                .img{
+                    border-radius: 10px;
+                    height: 400px;
+                    width: 100%;
+                    transition: all .5s;
+                }
+                }
+                .title{
+                    color: white;
+                    font-size: 20px;
+                     font-weight: 500;
+                }
+            }
+        }
+    }
+}

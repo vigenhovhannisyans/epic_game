@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxOutsideClickModule } from 'ngx-outside-click';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -29,6 +30,7 @@ import { HotGamesComponent } from './components/shared/hot-games/hot-games.compo
     AppRoutingModule,
     NgbModule,
     SlickCarouselModule,
+    HttpClientModule,
     ToastrModule.forRoot(),
   ],
   providers: [],

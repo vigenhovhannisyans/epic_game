@@ -26,8 +26,11 @@ export class HotGamesComponent implements OnInit {
   }
 
   getAllGames(): void{
-   this.allGames = this.gameService.getAllGames();
-   this.selectedGame = this.allGames[0];
+    this.gameService.getAllGames().subscribe(gameEvent => {
+      this.allGames = gameEvent
+      this.selectedGame = this.allGames[0];
+
+    })
   }
 
   selectGame(selectedGame: Game, index: number): void{
@@ -49,6 +52,7 @@ export class HotGamesComponent implements OnInit {
   removeFromWishList(gameId: number, gameName: string): void{
     this.toastr.success('Successfully removed from your wishlist', `${gameName}`)
     this.wishListService.removeIdFromLocalStorage(gameId)
+    this.getGameIdFromStorage()
   }
 
 }

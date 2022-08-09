@@ -4,7 +4,15 @@
 @import '~bootstrap/scss/bootstrap';
 body{
     background-color: #121212;
+    overflow-x: hidden;
 }
 .toast-success{
     background-color: #007AFF !important;
+}
+
+@media(max-width: 991px){
+    .container{
+        width: 100%;
+        max-width: 100%;
+    }
 }

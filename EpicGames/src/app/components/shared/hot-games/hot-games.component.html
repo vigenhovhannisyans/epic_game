@@ -2,9 +2,9 @@
     <div class="image-side">
         <img [src]="selectedGameImageUrl" alt="" class="selected-img">
         <div class="about-side">
-            <span class="title">{{selectedGame.title}}</span>
-            <span class="desc">{{selectedGame.about_game}}</span>
-            <button *ngIf="!wishGamesId.toString().includes(''+selectedGame.id); else remove" class="add" (click)="addToWishList(selectedGame.id,selectedGame.title)">Save to Wishlist</button>
+            <span class="title">{{selectedGame?.title}}</span>
+            <span class="desc">{{selectedGame?.about_game}}</span>
+            <button *ngIf="!wishGamesId.toString().includes(''+selectedGame?.id); else remove" class="add" (click)="addToWishList(selectedGame.id,selectedGame.title)">Save to Wishlist</button>
         </div>
     </div>
     <div class="games-side">

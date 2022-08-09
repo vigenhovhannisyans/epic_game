@@ -1,0 +1,38 @@
+.footer{
+    margin-top: 77px;
+    background: #202020;
+    height: 411px;
+    padding: 70px;
+    .container{
+        .sections{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 15px;
+            &:last-child{
+                margin-right: 0;
+            }
+            .section{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                .item{
+                    color: white;
+                    font-weight: 500;
+                    margin-bottom: 15px;
+                    transition: all .5s;
+                    &:hover{
+                        cursor: pointer;
+                        color:#007AFF;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    &.header{
+                        pointer-events: none;
+                        color:#007AFF;
+                    }
+                }
+            }
+        }
+    }
+}

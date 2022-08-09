@@ -1,0 +1,197 @@
+[
+    {
+        "id": 1,
+        "is_epic": false,
+        "has_live": false,
+        "image_url": "../../../../assets/images/games/game.svg",
+        "title": "Little Tina Fantasy Land",
+        "about_game": "Embark on an epic adventure full of whimsy, wonder, and high-powered weaponry! Coming",
+        "operation_system_id": [1,2],
+        "price": 100,
+        "sale": 50,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-1.svg"
+    },
+    {
+        "id": 2,
+        "has_live": false,
+        "is_epic": true,
+        "image_url": "../../../../assets/images/games/game-1.svg",
+        "title": "Stifu",
+        "about_game": "Sifu is an action beat 'em up video game developed and published by French studio Sloclap. Set in modern-day China, players control the child of a martial arts school's sifu who seeks revenge on those responsible for their father's death.",
+        "operation_system_id": [1],
+        "price": 100,
+        "sale": 10,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-2.svg"
+    },
+    {
+        "id": 3,
+        "has_live": false,
+        "is_epic": true,
+        "image_url": "../../../../assets/images/games/game-3.svg",
+        "title": "Red Dead Redemption 2",
+        "about_game": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption",
+        "operation_system_id": [1,2],
+        "price": 200,
+        "sale": 15,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-3.svg"
+    },
+    {
+        "id": 4,
+        "has_live": false,
+        "is_epic": false,
+        "image_url": "../../../../assets/images/games/game-4.svg",
+        "title": "Cyberpunk 2077",
+        "about_game": "Cyberpunk 2077 is an action role-playing video game developed by CD Projekt Red and published by CD Projekt. The story takes place in Night City, an open world set in the Cyberpunk universe.",
+        "operation_system_id": [1,2],
+        "price": 300,
+        "sale": 10,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-4.svg"
+    },
+    {
+        "id": 5,
+        "has_live": false,
+        "is_epic": false,
+        "image_url": "../../../../assets/images/games/game-5.svg",
+        "title": "Kena",
+        "about_game": "Kena: Bridge of Spirits is a 2021 action-adventure video game developed and published by Ember Lab. The story follows Kena, a young spirit guide who uses her magical abilities to help deceased people move from the physical to the spirit world. The game is presented through a third-person perspective.",
+        "operation_system_id": [1,2],
+        "price": 100,
+        "sale": 5,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-5.svg"
+    },
+    {
+        "id": 6,
+        "has_live": false,
+        "is_epic": true,
+        "image_url": "../../../../assets/images/games/game-6.svg",
+        "title": "Vampire: The Masquerade",
+        "about_game": "Vampire was inspired by role-playing games (RPGs) such as Call of Cthulhu, RuneQuest, and Nightlife, as well as the writings of Joseph Campbell and vampire films such as The Lost Boys.",
+        "operation_system_id": [1],
+        "price": 300,
+        "sale": 2,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-6.svg"
+    },
+    {
+        "id": 7,
+        "has_live": false,
+        "is_epic": false,
+        "image_url": "../../../../assets/images/games/game-7.svg",
+        "title": "Salt and Sacrifice",
+        "about_game": "A once-peaceful kingdom is plunged into chaos by encroaching tides of Mages: merciless embodiments of elemental chaos. The Marked Inquisitors, a doomed force of the condemned, once again mobilizes to stand against the existential threat of Magic. A buried secret threatens to bring an ancient empire to utter ruin.",
+        "operation_system_id": [1],
+        "price": 200,
+        "sale": 3,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-7.svg"
+    },
+    {
+        "id": 8,
+        "has_live": false,
+        "is_epic": true,
+        "image_url": "../../../../assets/images/games/game-8.svg",
+        "title": "Jelly Bean Man",
+        "about_game": "In the early morning of May 17th, @Epic Games Mall official Weibo announced that the popular multiplayer party game “Jelly Bean Man” will be permanently free on all platforms from June 21st, and will be available for the first time on Nintendo Switch, Xbox and Epic game malls.",
+        "operation_system_id": [1],
+        "price": 50,
+        "sale": 10,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-8.svg"
+    },
+    {
+        "id": 9,
+        "has_live": false,
+        "is_epic": true,
+        "image_url": "../../../../assets/images/games/game-7.svg",
+        "title": "Salt and Sacrifice",
+        "about_game": "A once-peaceful kingdom is plunged into chaos by encroaching tides of Mages: merciless embodiments of elemental chaos. The Marked Inquisitors, a doomed force of the condemned, once again mobilizes to stand against the existential threat of Magic. A buried secret threatens to bring an ancient empire to utter ruin.",
+        "operation_system_id": [1],
+        "price": 200,
+        "sale": 15,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-7.svg"
+    },
+    {
+        "id": 10,
+        "is_epic": true,
+        "has_live": false,
+        "image_url": "../../../../assets/images/games/game-10.svg",
+        "title": "Evil Dead: The Game",
+        "about_game": "Evil Dead: The Game is a 2022 survival horror game based on the Evil Dead franchise. It was developed and published by Saber Interactive. It features co-operative gameplay and player versus player combat.",
+        "operation_system_id": [1],
+        "price": 200,
+        "sale": 30,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-10.svg"
+    },
+    {
+        "id": 11,
+        "is_epic": true,
+        "has_live": true,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Fortnite",
+        "image_url": "../../../../assets/images/games/game-11.jpg",
+        "title": "Fortnite",
+        "about_game": "Fortnite is the completely free online game where you and your friends fight to be the last one standing in Battle Royale",
+        "operation_system_id": [1],
+        "price": 200,
+        "sale": 30,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/game-11.jpg"
+    },
+    {
+        "id": 12,
+        "is_epic": true,
+        "has_live": true,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V",
+        "image_url": "../../../../assets/images/games/game-12.jpg",
+        "title": "Grand Theft Auto V",
+        "about_game": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV",
+        "operation_system_id": [1],
+        "price": 200,
+        "sale": 30,
+        "category": [
+            "Action",
+            "Fantasy"
+        ],
+        "cover_image_path": "../../../../assets/images/games/game-12.jpg"
+    }
+    
+]

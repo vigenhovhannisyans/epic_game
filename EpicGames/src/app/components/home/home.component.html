@@ -1,1 +1,41 @@
-<p>home works!</p>
+<div class="container home">
+    <span class="category-title">Top Saled Games</span>
+<ngx-slick-carousel class="carousel" 
+#slickModal="slick-carousel" 
+[config]="slideConfig" 
+(init)="slickInit($event)"
+(breakpoint)="breakpoint($event)"
+(afterChange)="afterChange($event)"
+(beforeChange)="beforeChange($event)">
+<div ngxSlickItem *ngFor="let game of allGames" class="slide" (click)="showMoreAboutGame(game.id)">
+<img [src]="game.image_url" alt="" width="100%">
+<span class="title">{{game.title}}</span>
+<div class="price">
+    <ng-container *ngIf="game.sale">
+    <span *ngIf="game.sale > 0" class="sale">- {{game.sale}}%</span>
+    <span class="minus-price">{{game.price}}$</span>
+    <span class="game-price">{{calculateSale(game.price, game.sale)}}$</span>
+</ng-container>
+</div>
+</div>
+</ngx-slick-carousel>
+
+
+<div class="epic-game-side">
+    <span class="category-title">Live Streams</span>
+    <div class="game-side">
+        <ng-container *ngFor="let liveGames of allGames">
+        <div *ngIf="liveGames.has_live" class="game">
+            <a class="watch-live" [href]="liveGames.live_stream_url" target="_blank">Watch Live</a>
+            <div class="game-img">
+            <img class="img" [src]="liveGames.image_url">
+        </div>
+        <span class="title">{{liveGames.title}}</span>
+        </div>
+    </ng-container>
+    </div>
+</div>
+
+
+
+</div>
