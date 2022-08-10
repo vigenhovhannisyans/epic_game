@@ -32,6 +32,7 @@ export class AllGamesComponent implements OnInit {
   }
 
   searchGame(event: string): void{
+    this.isSearch = true
     this.currentPage = 1
     this.filteredGames = this.allGames.filter(game => game.title.toLocaleLowerCase().includes(event.toLocaleLowerCase()))
   }

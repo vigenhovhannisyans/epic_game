@@ -122,9 +122,42 @@
         "about_game": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive.",
         "price": 200,
         "sale": 15,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-3.svg",
         "more_image_url": [
@@ -142,9 +175,42 @@
         "about_game": "Cyberpunk 2077 is an action role-playing video game developed by CD Projekt Red and published by CD Projekt. The story takes place in Night City, an open world set in the Cyberpunk universe. The game was developed using the REDengine 4 by a team of around 500 people, exceeding the number that worked on the studio's previous game The Witcher 3: Wild Hunt (2015). CD Projekt launched a new division in Wrocław, Poland, and partnered with Digital Scapes, Nvidia, QLOC, and Jali Research to aid the production. Cyberpunk creator Mike Pondsmith was a consultant, and actor Keanu Reeves has a starring role. The original score was led by Marcin Przybyłowicz, featuring the contributions of several licensed artists.",
         "price": 300,
         "sale": 10,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-4.svg",
         "more_image_url": [
@@ -162,9 +228,42 @@
         "about_game": "Kena: Bridge of Spirits is a 2021 action-adventure video game developed and published by Ember Lab. The story follows Kena, a young spirit guide who uses her magical abilities to help deceased people move from the physical to the spirit world. The game is presented through a third-person perspective.The game's development was led by brothers Mike and Josh Grier, founders of Ember Lab. Having spent five years creating commercials and branded applications, the development team shifted to creating an original video game after 2016. They partnered with Sony Interactive Entertainment for a console-exclusive deal, and grew the team to 15 core employees. The game's art was created in collaboration with Vietnamese animation studio Sparx, and its fictional world is inspired by Eastern locations such as Japan and Bali. The original score was composed by Jason Gallaty, who collaborated with Balinese ensemble group Gamelan Çudamani to create gamelan music respectful to the culture.",
         "price": 100,
         "sale": 50,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-5.svg",
         "more_image_url": [
@@ -182,9 +281,42 @@
         "about_game": "Vampire was inspired by role-playing games (RPGs) such as Call of Cthulhu, RuneQuest, and Nightlife, as well as the writings of Joseph Campbell and vampire films such as The Lost Boys. Some of Vampire's central themes of the power of belief developed out of Rein-Hagen's religious upbringing. Inspired by a comic book given to him by White Wolf business partner Stewart Wieck, Rein-Hagen developed the idea that the cursed character of the Biblical Cain was the original vampire. In an Ask Me Anything interview on Reddit Rein-Hagen referred to the idea of Cain as the progenitor of all vampires as a big turning point. He commented further: I was trying to shy away from religion. After that... I went all in. The game and the world became about religion and belief. My father was a Lutheran minister, and I think that played a huge role in not only Vampire but the whole WoD series. I was always fascinated by what made people believe so strongly when I didn't seem to believe at all. Talking about that theme, the power of belief, fueled the second half of Vampire game design.",
         "price": 300,
         "sale": 25,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-6.svg",
         "more_image_url": [
@@ -202,9 +334,42 @@
         "about_game": "A once-peaceful kingdom is plunged into chaos by encroaching tides of Mages: merciless embodiments of elemental chaos. The Marked Inquisitors, a doomed force of the condemned, once again mobilizes to stand against the existential threat of Magic. A buried secret threatens to bring an ancient empire to utter ruin.As a Marked Inquisitor, you’ll journey through the western frontier: pursuing, hunting, and obliterating the Mages that roam the realm. You may be bound to the Inquisition, but your choices are yours.",
         "price": 200,
         "sale": 30,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-7.svg",
         "more_image_url": [
@@ -222,9 +387,42 @@
         "about_game": "In the early morning of May 17th, @Epic Games Mall official Weibo announced that the popular multiplayer party game “Jelly Bean Man” will be permanently free on all platforms from June 21st, and will be available for the first time on Nintendo Switch, Xbox and Epic game malls. In the early morning of May 17th, @Epic Games Mall official Weibo announced that the popular multiplayer party game “Jelly Bean Man” will be permanently free on all platforms from June 21st, and will be available for the first time on Nintendo Switch, Xbox and Epic game malls",
         "price": 50,
         "sale": 10,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-8.svg",
         "more_image_url": [
@@ -242,9 +440,42 @@
         "about_game": "Become the ultimate assassin in the most realistic modern warfare sniping game available. Engage in an immersive single-player campaign across large, open-ended maps. Tactical thinking, stealth approach and precision in execution of long shots required.Sniper Ghost Warrior Contracts, Sniper Ghost Warrior Contracts - SV - AMUR - sniper rifle, Sniper Ghost Warrior Contracts - STURM BODYGUARD 9 - gun, Sniper Ghost Warrior Contracts - Steam Mist Weapon Skin, Sniper Ghost Warrior Contracts - World Flags Skin",
         "price": 200,
         "sale": 15,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-9.jpg",
         "more_image_url": [
@@ -262,9 +493,42 @@
         "about_game": "Evil Dead: The Game received mixed or average reviews for PlayStation 5 and Xbox Series X/S according to review aggregator Metacritic;the PC version received generally favorable reviews. Mark Delaney of GameSpot gave the game a score of 6 out of 10, praising its faithfulness to the Evil Dead franchise and class-based character design while criticizing the progression as slow, story missions as undeveloped, and PvP combat as unbalanced.[22] Jordan Gerblick of GamesRadar+ commended the game's approachability, graphics, and homages made to the franchise while taking issue with the lack of content, difficulty in single-player missions, and the lack of more traversal options. Travis Northup of IGN gave the game 8 out of 10, writing, Evil Dead: The Game is an awesome asymmetric multiplayer game that, like its source material, is far better than it has any right to be given its frustrating lack of polish and being somewhat light on maps and modes.",
         "price": 200,
         "sale": 30,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-10.svg",
         "more_image_url": [
@@ -283,9 +547,42 @@
         "about_game": "Fortnite is the completely free online game where you and your friends fight to be the last one standing in Battle Royale.Save the World and Battle Royale were released in 2017 as early access titles, while Creative was released on December 6, 2018. While the Save the World and Creative versions have been successful for Epic Games, Fortnite Battle Royale in particular became an overwhelming success and a cultural phenomenon, drawing more than 125 million players in less than a year, earning hundreds of millions of dollars per month. Fortnite as a whole generated $9 billion in gross revenue up until December 2019. Save the World is available only for Windows, macOS,[b] PlayStation 4, and Xbox One, while Battle Royale and Creative were released for all those platforms, and also for Nintendo Switch, iOS,[b] and Android devices.[b] The game also launched with the release of the next-generation PlayStation 5 and Xbox Series X/S consoles.",
         "price": 200,
         "sale": 35,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/game-11.jpg",
         "more_image_url": [
@@ -304,9 +601,42 @@
         "about_game": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV. Extensively marketed and widely anticipated, the game broke industry sales records and became the fastest-selling entertainment product in history, earning $800 million in its first day and $1 billion in its first three days. It received critical acclaim, with praise directed at its multiple protagonist design, open world, presentation and gameplay. However, it caused controversies related to its depiction of violence and women. Considered one of seventh and eighth generation console gaming's most significant titles and among the best video games ever made, it won year-end accolades including Game of the Year awards from several gaming publications. It is the second best-selling video game of all time with over 169 million copies shipped, and as of April 2018, one of the most financially successful entertainment products of all time, with about $6 billion in worldwide revenue.",
         "price": 200,
         "sale": 40,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/game-12.jpg",
         "more_image_url": [
@@ -324,9 +654,42 @@
         "about_game": "Insurgency is a multiplayer tactical first-person shooter video game developed and published by New World Interactive. It is a standalone sequel to Insurgency: At the beginning of each game, players are able to choose a class and select a variety of weapons. Players have a certain number of supply points to spend on purchasing weapons and modifications",
         "price": 300,
         "sale": 0,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-13.svg",
         "more_image_url": [
@@ -344,9 +707,42 @@
         "about_game": "The wildcat is a species complex comprising two small wild cat species: the European wildcat and the African wildcat. Explore sprawling maze-like dungeons and liberate giant mech robots from demonic elder gods. Enemy encounters are challenging and specifically designed - not randomized - to provide difficult combat puzzles. Gear Up - Mow Down - Get Killed - Retaliate! Over 40 gun types to choose from. Each has their own unique features like auto-aim bullets, long-range laser beams or exploding rounds with a huge blast radius.",
         "price": 500,
         "sale": 0,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-14.svg",
         "more_image_url": [
@@ -364,9 +760,42 @@
         "about_game": "Rogue is a dungeon crawling video game by Michael Toy and Glenn Wichman with later contributions by Ken Arnold. Rogue became popular in the 1980s among college students and other computer-savvy users in part due to its inclusion in 4.2BSD. It inspired programmers to develop a number of similar titles such as Hack (1982/1984) and Moria (1983), though as Toy, Wichman, and Arnold had not released the source code at this time, these new games introduced different variations atop Rogue. A long lineage of games grew out from these titles. While Rogue was not the first dungeon-crawling game with procedural generation features, it introduced the subgenre of roguelike RPG procedurally generated dungeon crawlers with Dungeons-and-Dragons-like items (armor, weapons, potions, and magic scrolls) that also had permadeath (permanent death) and an overhead graphical view — albeit via ASCII drawings, as opposed to text descriptions in natural language such as in Adventure/Colossal Cave",
         "price": 100,
         "sale": 0,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-15.svg",
         "more_image_url": [
@@ -384,9 +813,42 @@
         "about_game": "James T Kirk, who is the captain of the Starship Enterprise, explores the whole galaxy with his crew and goes on several adventures as they fight evil forces together. The Starfleet Command game series released by Interplay was based largely on the tabletop game Star Fleet Battles, and comprised Starfleet Command, Starfleet Command II: Empires at War, and Starfleet Command III. It constitutes one of the most definitive current games, depicting a wide array of ship systems and Star Trek storylines. This series had a more naval flavor, and depicted a number of ship systems. This series spawned a very large multiplayer ladder competition first with the Starlance system, and later on the GamerZone ladder. The main multiplayer setting is the Dynaverse which began as an official server hosted by Taldren, and has continued as a private effort (an earlier, unauthorized adaptation of Star Fleet Battles as a computer game was SSI's The Warp Factor in 1982).",
         "price": 1000,
         "sale": 0,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-16.svg",
         "more_image_url": [
@@ -404,9 +866,42 @@
         "about_game": "The X-Ray Kill Cam feature from V2 also makes a return, in which when a successful and skilled shot is made, the camera will track the bullet from the sniper rifle to the target in slow motion, and upon impact will show an anatomically correct x-ray style reveal of the body part being hit and the damage the bullet causes to the organs and bones. Some items can also trigger an explosion when shot, which can be used to the player's advantage against the hordes of zombies. The game will also measure notable shots by briefly displaying distance and other factors like whether it was a head shot or moving target.",
         "price": 1000,
         "sale": 0,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-17.svg",
         "more_image_url": [
@@ -425,9 +920,42 @@
         "about_game": "Dying Light is a 2015 survival horror video game developed by Techland and published by Warner Bros. Interactive Entertainment. The game's story follows an undercover agent named Kyle Crane who is sent to infiltrate a quarantine zone in a Middle-eastern city called Harran.",
         "price": 1000,
         "sale": 0,
-        "category": [
-            "Action",
-            "Fantasy"
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
         ],
         "cover_image_path": "../../../../assets/images/games/cover-18.svg",
         "more_image_url": [
