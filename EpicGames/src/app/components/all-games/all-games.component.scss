@@ -84,6 +84,69 @@
         }
     }
 }
+::ng-deep{
+    .ngx-pagination{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        li{
+            width: 36px;
+            height: 36px;
+            color: white;
+            font-weight: 500;
+            margin-right: 20px !important;
+            &:last-child{
+                margin-right: 0 !important;
+            }
+            a{
+                padding-top: 5px;
+                width: 36px;
+                height: 36px;
+                &:hover{
+                    background-color: #007AFF;
+                }
+            }
+            
+            &.pagination-previous{
+                font-size: 0;
+                background-image: url('../../../assets/images/icons/arrow-right.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(180deg);
+                a{
+                    &:hover{
+                        background-color: transparent !important;
+                    }
+                }
+            }
+            &.pagination-next{
+                font-size: 0;
+                background-image: url('../../../assets/images/icons/arrow-right.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                a{
+                    width: 36px;
+                    height: 36px;
+                    &:hover{
+                        background-color: transparent !important;
+                    }
+                }
+            }
+            &.current{
+                background-color: #007AFF;
+            }
+            &.disabled{
+                pointer-events: none !important;
+                opacity: 0.5;
+            }
+            span{
+                padding-top: 1px !important;
+                display: block;
+            }
+        }
+    }
+    }
 .no-result{
     font-size: 50px;
     color: white;

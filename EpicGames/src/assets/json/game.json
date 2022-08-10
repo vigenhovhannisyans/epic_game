@@ -74,6 +74,43 @@
             "../../../../assets/images/games/sifu.png",
             "../../../../assets/images/games/sifu-1.jpg",
             "../../../../assets/images/games/sifu-2.jpg"
+        ],
+        "operation_system":[
+            "Windows 7 / vista / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 11"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i4-3210 / AMD Phenom II X4 910e",
+            "Core i7 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "10GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 300 GTS / Radeon HD 1850",
+            "GeForce 650 Ti / Radeon HD 6970",
+            "GeForce 1080 Ti / Radeon R10 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "35",
+            "41",
+            "69"
+        ],
+        "pvp":[
+            "38",
+            "41",
+            "49"
         ]
     },
     {

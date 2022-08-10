@@ -76,11 +76,14 @@
                 </ng-container>
             </div>
             <button class="download">Download</button>
-            <button class="download wishlist">Save to wishlist</button>
+            <button *ngIf="!wishGamesId.toString().includes(''+gameById?.id); else remove" (click)="addToWishList(gameById.id, gameById.title)" class="download wishlist">Save to wishlist</button>
         </div>
     </div>
 
     <ng-template #noSale>
         <span class="price">Price: <span>{{gameById.price}}$ </span></span>
     </ng-template>
+    <ng-template #remove>
+        <button  (click)="removeFromWishList(gameById.id, gameById.title)" class="remove">Remove from Wishlist</button>
+     </ng-template>
 </div>

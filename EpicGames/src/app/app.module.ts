@@ -19,6 +19,7 @@ import { AllGamesComponent } from './components/all-games/all-games.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutGameComponent } from './components/about-game/about-game.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { WishlistComponent } from './components/wishlist/wishlist.component';
     ToastrModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
