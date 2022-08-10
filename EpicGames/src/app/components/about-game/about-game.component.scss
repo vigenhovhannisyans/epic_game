@@ -1,0 +1,142 @@
+.about-game{
+    padding-top: 70px;
+    .game-title{
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        color: white;
+        font-size: 50px;
+    }
+    .image-and-desc{
+        margin-top: 50px;
+        .cover{
+            width: 100%;
+            border-radius: 15px;
+            height: 700px;
+        }
+        .more-images{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            .image{
+                width: 100%;
+                margin-bottom: 40px;
+                &:nth-child(1){
+                    width: 48%;
+                    margin-right: 15px;
+                }
+                &:nth-child(2){
+                    width: 48%;
+                }
+                &:nth-child(3){
+                    height: 400px;
+                }
+            }
+        }
+        .desc{
+            margin-top: 30px;
+            color: white;
+            font-weight: 500;
+            font-size: 25px;
+            text-align: justify;
+            margin-bottom: 30px;
+        }
+    }
+    .params{
+        width: 100%;
+        height: max-content;
+        background: #262626;
+        display: flex;
+        flex-direction: column;
+        padding: 17px;
+        .top-side{
+            border-bottom: 1px solid #ffffff4d;
+            padding-bottom: 17px;
+            .system{
+                display: block;
+                text-align: center;
+                font-weight: 500;
+                color: white;
+                font-size: 30px;
+            }
+        }
+        .requirements{
+            .requirements-table{
+                width: 100%;
+                margin: 0px auto;
+                border: 1px solid rgba(140,145,150,0.6);
+                border-collapse: collapse;
+                border-spacing: 0px;
+                background: none;
+                color: white;
+                 th {
+                    font-weight: normal;
+                    background: #262b2f;
+                    width: 25%;
+                    padding: 12px 10px;
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-align: center;
+                    border: 1px solid rgba(140,145,150,0.2);
+                    text-align: center;
+                }
+                td{
+                    padding: 12px 10px;
+                    font-size: 13px;
+                    line-height: 18px;
+                    text-align: center;
+                    border: 1px solid rgba(140,145,150,0.2);
+                    text-align: left;
+                    &.gb-td{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .bottom-side{
+            margin-top: auto;
+            border-top: 1px solid #ffffff4d;
+            padding-top: 17px;
+            .price-side{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                .sale{
+                    color: white;
+                    background-color: red;
+                    width: 57px;
+                    display: block;
+                    text-align: center;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    margin-right: 10px;
+                }
+                .price{
+                    color: white;
+                    font-weight: 500;
+                    margin-right: 10px;
+                    &.line{
+                        color: #ffffff70;
+                        span{
+                        text-decoration: line-through;
+                    }
+                    }
+                }
+            }
+            .download{
+                border: none;
+                border-radius: 5px;
+                width: 200px;
+                height: 40px;
+                font-weight: 700;
+                color: white;
+                text-align: center;
+                background-color: red;
+                margin-right: 15px;
+                &.wishlist{
+                    background-color: #007AFF;
+                }
+            }
+        }
+    }
+}

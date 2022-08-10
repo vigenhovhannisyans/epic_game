@@ -18,6 +18,7 @@ import { SearchComponent } from './components/shared/search/search.component';
 import { AllGamesComponent } from './components/all-games/all-games.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutGameComponent } from './components/about-game/about-game.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { AboutGameComponent } from './components/about-game/about-game.component
     HotGamesComponent,
     SearchComponent,
     AllGamesComponent,
-    AboutGameComponent
+    AboutGameComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserAnimationsModule,

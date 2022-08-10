@@ -83,7 +83,7 @@ export class HomeComponent implements OnInit {
   }
 
   showMoreAboutGame(gameId: number): void{
-    console.log(gameId)
+    this.gameService.redirectToAboutGamePage(gameId);
   }
 
   getAllEpicGames(){

@@ -32,7 +32,7 @@ export class AllGamesComponent implements OnInit {
   searchGame(event: string): void{
     this.isSearch = true
     console.log(event);
-    this.filteredGames = this.allGames.filter(game => game.title.toLocaleLowerCase().includes(event))
+    this.filteredGames = this.allGames.filter(game => game.title.toLocaleLowerCase().includes(event.toLocaleLowerCase()))
   }
   
   redirectToAboutGamePage(id: number): void{

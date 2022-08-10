@@ -3,7 +3,6 @@ export interface Game {
     image_url: string;
     title: string;
     about_game: string;
-    operation_system_id: number[];
     price: number;
     sale?: number;
     category: string[];
@@ -11,4 +10,14 @@ export interface Game {
     is_epic: boolean;
     live_stream_url?: string;
     has_live: boolean;
+    more_image_url: string[];
+    operation_system: string[];
+    processor: string[];
+    ram: string[];
+    video_card: string[];
+    disc: string;
+    directX: string[];
+    internet: string;
+    pve: string[];
+    pvp: string[];
 }
