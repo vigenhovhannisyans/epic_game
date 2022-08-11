@@ -40,6 +40,7 @@
                 text-align: center;
                 color: white;
                 font-weight: 500;
+                padding-top: 3px;
             }
             .epic{
                 display: block;
@@ -50,6 +51,7 @@
                 text-align: center;
                 color: white;
                 font-weight: 500;
+                padding: 3px;
             }
             .game-price{
                 margin-left: 10px;
@@ -107,7 +109,7 @@
                     z-index: 9;
                     width: 200px;
                     border-radius: 4px;
-                    padding: 4px;
+                    padding: 10px;
                     font-size: 20px;
                     font-weight: 500;
                     color: white;
@@ -128,6 +130,7 @@
                 .game-img{
                     overflow: hidden;
                     border-radius: 10px;
+                    margin-bottom: 10px;
                 .img{
                     object-fit: cover;
                     border-radius: 10px;
@@ -139,7 +142,8 @@
                 .title{
                     color: white;
                     font-size: 20px;
-                     font-weight: 500;
+                    font-weight: 500;
+                    margin-bottom: 10px;
                 }
             }
         }

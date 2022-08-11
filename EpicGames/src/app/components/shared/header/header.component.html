@@ -37,7 +37,7 @@
                     <span class="user-name">John</span>
                 </li>
 
-                <li class="list login">
+                <li (click)="openDialog()" class="list login">
                     <span class="user-name">Login</span>
                 </li>
                 <li [ngClass]="{'active': showLanguage}" class="language">

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
@@ -6,6 +6,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxOutsideClickModule } from 'ngx-outside-click';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -20,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutGameComponent } from './components/about-game/about-game.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { AuthModalComponent } from './components/shared/auth-modal/auth-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     SearchComponent,
     AllGamesComponent,
     AboutGameComponent,
-    WishlistComponent
+    WishlistComponent,
+    AuthModalComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -44,9 +47,13 @@ import { NgxPaginationModule } from 'ngx-pagination';
     ToastrModule.forRoot(),
     FormsModule,
     ReactiveFormsModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }

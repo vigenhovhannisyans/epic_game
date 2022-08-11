@@ -30,6 +30,7 @@
             background-color: #ff8500;
             clip-path: polygon(60% 0, 100% 50%, 60% 100%, 0% 100%, 0 50%, 0% 0%);
             transform: rotate(90deg) translate(0px, 25px);
+            padding-top: 3px;
             .sale-percent{
                 font-weight: 500;
                 font-size: 15px;
@@ -72,6 +73,7 @@
                 color: white;
                 font-size: 20px;
                 font-weight: 500;
+                margin-bottom: 10px;
             }
             .price{
                 font-weight: 700;

@@ -36,3 +36,11 @@ body{
         max-width: 100%;
     }
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.auth-modal{
+  .mat-dialog-container{
+    background-color: #121212;
+    border-radius: 10px;
+  }
+}
