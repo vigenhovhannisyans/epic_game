@@ -55,4 +55,9 @@ export class HotGamesComponent implements OnInit {
     this.getGameIdFromStorage()
   }
 
+  redirectToAboutGamePage(id: number): void{
+    console.log(id);
+    this.gameService.redirectToAboutGamePage(id);
+  }
+
 }

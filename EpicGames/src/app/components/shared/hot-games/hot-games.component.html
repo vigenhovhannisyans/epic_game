@@ -4,7 +4,10 @@
         <div class="about-side">
             <span class="title">{{selectedGame?.title}}</span>
             <span class="desc">{{selectedGame?.about_game}}</span>
+            <div class="btn-div">
             <button *ngIf="!wishGamesId.toString().includes(''+selectedGame?.id); else remove" class="add" (click)="addToWishList(selectedGame.id,selectedGame.title)">Save to Wishlist</button>
+            <button class="add" (click)="redirectToAboutGamePage(selectedGame.id)">Download</button>
+        </div>
         </div>
     </div>
     <div class="games-side">

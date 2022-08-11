@@ -1,8 +1,14 @@
 .auth{
     .auth-form{
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        flex-direction: column;
+        .left-side{
+            display: flex;
+            align-items: baseline;
+            width: 60%;
+            margin-right: 10px;
+            flex-direction: column;
         .input-field{
             margin-bottom: 20px;
             width: 100%;
@@ -14,29 +20,67 @@
             height: 50px;
             padding: 0 20px;
             outline: none;
-        }
-        .title{
-            display: block;
-            text-align: center;
-            color: white;
-            font-weight: 500;
-            font-size: 18px;
-            position: relative;
-            width: 100%;
-            .close-modal{
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 30px;
-                height: 30px;
-                border: none;
-                background-color: transparent;
-                outline: none;
-                img{
-                    width: 100%;
-                    filter: brightness(0) invert(1);
-                }
+            &.invalid{
+                border: 1px solid red;
             }
         }
+        .login{
+            text-decoration: none;
+            color: white;
+            width: max-content !important;
+            width: 100%;
+            margin-bottom: 20px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .form-btn{
+            border: none;
+            border-radius: 10px;
+            width: 250px;
+            height: 50px;
+            background-color: #007AFF;
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            transition: all .5s;
+            &:hover{
+                background-color: #0065d3;
+            }
+        }
+    }
+    .right-side{
+        .logo{
+            width: 220px;
+        }
+    }
+    }
+    .title{
+        display: block;
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        position: relative;
+        width: 100%;
+        .close-modal{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            img{
+                width: 100%;
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .disabled-btn{
+        opacity: 0.5;
+        pointer-events: none;
     }
 }
