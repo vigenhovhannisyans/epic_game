@@ -55,7 +55,7 @@ export class HeaderComponent implements OnInit {
   }
 
   selectLanguage(lanugage: string, index: number){
-    this.translateService.setDefaultLang(lanugage)
+    this.translateService.use(lanugage)
     this.selectedLanguage = index;
     this.outsideClick()
   }
