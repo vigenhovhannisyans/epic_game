@@ -22,6 +22,7 @@ import { AboutGameComponent } from './components/about-game/about-game.component
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AuthModalComponent } from './components/shared/auth-modal/auth-modal.component';
+import { LiveStreamsComponent } from './components/live-streams/live-streams.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { AuthModalComponent } from './components/shared/auth-modal/auth-modal.co
     AllGamesComponent,
     AboutGameComponent,
     WishlistComponent,
-    AuthModalComponent
+    AuthModalComponent,
+    LiveStreamsComponent
   ],
   imports: [
     BrowserAnimationsModule,

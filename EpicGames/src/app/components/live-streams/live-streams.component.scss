@@ -1,0 +1,125 @@
+.live-games{
+    .live-title{
+        text-align: center;
+        color: white;
+        font-weight: 500;
+        font-size: 40px;
+        margin: 17px 0 43px 0;
+    }
+    .games{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .game{
+            width: 400px;
+            height: max-content;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            min-height: 260px;
+            margin-bottom: 25px;
+            .game-img{
+                border-radius: 15px;
+                width: 100%;
+                object-fit: cover;
+                opacity: 0.5;
+                height: 255px;
+                transition: all .5s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            .game-title{
+                font-weight: 500;
+                color: white;
+                display: block;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 20px;
+            }
+            .live-link{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-decoration: none;
+            .play{
+                width: 70px;
+                height: 70px;
+                filter: brightness(0) invert(1);
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            }
+            &.empty{
+                height: 0;
+                min-height: 0;
+            }
+        }
+    }
+    ::ng-deep{
+        .ngx-pagination{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;    
+            li{
+                width: 36px;
+                height: 36px;
+                color: white;
+                font-weight: 500;
+                margin-right: 20px !important;
+                &:last-child{
+                    margin-right: 0 !important;
+                }
+                a{
+                    padding-top: 5px;
+                    width: 36px;
+                    height: 36px;
+                    &:hover{
+                        background-color: #007AFF;
+                    }
+                }
+                
+                &.pagination-previous{
+                    font-size: 0;
+                    background-image: url('../../../assets/images/icons/arrow-right.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transform: rotate(180deg);
+                    a{
+                        &:hover{
+                            background-color: transparent !important;
+                        }
+                    }
+                }
+                &.pagination-next{
+                    font-size: 0;
+                    background-image: url('../../../assets/images/icons/arrow-right.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    a{
+                        width: 36px;
+                        height: 36px;
+                        &:hover{
+                            background-color: transparent !important;
+                        }
+                    }
+                }
+                &.current{
+                    background-color: #007AFF;
+                }
+                &.disabled{
+                    pointer-events: none !important;
+                    opacity: 0.5;
+                }
+                span{
+                    padding-top: 3px !important;
+                    display: block;
+                }
+            }
+        }
+        }
+}

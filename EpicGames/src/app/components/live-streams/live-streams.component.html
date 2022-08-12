@@ -1,0 +1,19 @@
+<div class="container live-games">
+    <h1 class="live-title">Welcome to Live Streams</h1>
+
+<app-search (searchValueEmitter)="searchGame($event)"></app-search>
+<div class="games">
+    <div class="game" *ngFor="let game of filteredLive | paginate: { itemsPerPage: 9, currentPage: currentPage }">
+        <img class="game-img" [src]="game.cover_image_path" alt="">
+        <span class="game-title">{{game.title}}</span>
+        <a [href]="game.live_stream_url" class="live-link" target="_blank">
+        <img src="../../../assets/images/icons/play.jpg" alt="" class="play">
+    </a>   
+    </div>
+    <div class="game empty"></div>
+    <div class="game empty"></div>
+
+
+</div>
+<pagination-controls (pageChange)="changePage($event)"></pagination-controls>
+</div>

@@ -10,6 +10,7 @@ import { GameService } from 'src/app/core/services/game.service';
 export class HomeComponent implements OnInit {
   allGames!: Game[];
   epicGames!: Game[]
+  showAllLiveGames = false;
   constructor(
     private gameService: GameService
   ) { }
@@ -75,6 +76,7 @@ export class HomeComponent implements OnInit {
     this.gameService.getAllGames().subscribe(games => {
       this.allGames = games;
       this.getAllEpicGames()
+      this.getLiveGamesAndCalculateLength()
     })
   }
 
@@ -86,9 +88,13 @@ export class HomeComponent implements OnInit {
     this.gameService.redirectToAboutGamePage(gameId);
   }
 
-  getAllEpicGames(){
-  const epicGames = this.allGames.filter(elem => elem.is_epic)
-  this.epicGames = epicGames
+  getAllEpicGames(): void{
+    this.epicGames = this.allGames.filter(elem => elem.is_epic)
+  }
+
+  getLiveGamesAndCalculateLength(): void{
+    const liveGameLength = this.allGames.filter(game=> game.has_live).length
+    liveGameLength > 4 ? this.showAllLiveGames = true : this.showAllLiveGames = false
   }
 
 }

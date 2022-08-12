@@ -26,8 +26,8 @@
 <div class="live-game-side">
     <span class="category-title">Live Streams</span>
     <div class="game-side">
-        <ng-container *ngFor="let liveGames of allGames">
-        <div *ngIf="liveGames.has_live" class="game">
+        <ng-container *ngFor="let liveGames of allGames; let i = index">
+        <div *ngIf="liveGames.has_live && i < 5" class="game">
             <a class="watch-live" [href]="liveGames.live_stream_url" target="_blank">Watch Live</a>
             <div class="game-img">
             <img class="img" [src]="liveGames.cover_image_path">
@@ -36,6 +36,11 @@
         </div>
     </ng-container>
     </div>
+    <a *ngIf="showAllLiveGames" routerLink="/live-games" class="see-all-live">
+        Show All
+        <img class="arrow-down" src="../../../assets/images/icons/arrow-right.svg" alt="">
+    </a>
+
 </div>
 
 <div class="epic-games">

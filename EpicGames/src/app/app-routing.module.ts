@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutGameComponent } from './components/about-game/about-game.component';
 import { AllGamesComponent } from './components/all-games/all-games.component';
 import { HomeComponent } from './components/home/home.component';
+import { LiveStreamsComponent } from './components/live-streams/live-streams.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'all-games', component: AllGamesComponent},
   {path: 'about-game', component: AboutGameComponent},
   {path: 'wishlist', component: WishlistComponent},
+  {path: 'live-games', component: LiveStreamsComponent},
 ];
 
 @NgModule({

@@ -58,10 +58,11 @@
     },
     {
         "id": 2,
-        "has_live": false,
+        "has_live": true,
         "is_epic": false,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Sifu",
         "image_url": "../../../../assets/images/games/game-1.svg",
-        "title": "Stifu",
+        "title": "Sifu",
         "about_game": "Sifu is an action beat 'em up video game developed and published by French studio Sloclap. Set in modern-day China, players control the child of a martial arts school's sifu (master) who seeks revenge on those responsible for their father's death. Every time the protagonist dies, they are resurrected by a magical talisman and age up, gaining access to more powerful attacks but reducing their health. When the player character becomes too old, they can die permanently, in which case players must restart the level from the beginning and from the same age as their initial attempt.",
         "price": 100,
         "sale": 10,
@@ -115,8 +116,9 @@
     },
     {
         "id": 3,
-        "has_live": false,
+        "has_live": true,
         "is_epic": false,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Red%20Dead%20Redemption%202",
         "image_url": "../../../../assets/images/games/game-3.svg",
         "title": "Red Dead Redemption 2",
         "about_game": "Red Dead Redemption 2 is a 2018 action-adventure game developed and published by Rockstar Games. The game is the third entry in the Red Dead series and a prequel to the 2010 game Red Dead Redemption. After a robbery goes badly wrong in the western town of Blackwater, Arthur Morgan and the Van der Linde gang are forced to flee. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive.",
@@ -168,8 +170,9 @@
     },
     {
         "id": 4,
-        "has_live": false,
+        "has_live": true,
         "is_epic": false,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Cyberpunk%202077",
         "image_url": "../../../../assets/images/games/game-4.svg",
         "title": "Cyberpunk 2077",
         "about_game": "Cyberpunk 2077 is an action role-playing video game developed by CD Projekt Red and published by CD Projekt. The story takes place in Night City, an open world set in the Cyberpunk universe. The game was developed using the REDengine 4 by a team of around 500 people, exceeding the number that worked on the studio's previous game The Witcher 3: Wild Hunt (2015). CD Projekt launched a new division in Wrocław, Poland, and partnered with Digital Scapes, Nvidia, QLOC, and Jali Research to aid the production. Cyberpunk creator Mike Pondsmith was a consultant, and actor Keanu Reeves has a starring role. The original score was led by Marcin Przybyłowicz, featuring the contributions of several licensed artists.",
@@ -221,8 +224,9 @@
     },
     {
         "id": 5,
-        "has_live": false,
+        "has_live": true,
         "is_epic": false,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Kena%3A%20Bridge%20of%20Spirits",
         "image_url": "../../../../assets/images/games/game-5.svg",
         "title": "Kena",
         "about_game": "Kena: Bridge of Spirits is a 2021 action-adventure video game developed and published by Ember Lab. The story follows Kena, a young spirit guide who uses her magical abilities to help deceased people move from the physical to the spirit world. The game is presented through a third-person perspective.The game's development was led by brothers Mike and Josh Grier, founders of Ember Lab. Having spent five years creating commercials and branded applications, the development team shifted to creating an original video game after 2016. They partnered with Sony Interactive Entertainment for a console-exclusive deal, and grew the team to 15 core employees. The game's art was created in collaboration with Vietnamese animation studio Sparx, and its fictional world is inspired by Eastern locations such as Japan and Bali. The original score was composed by Jason Gallaty, who collaborated with Balinese ensemble group Gamelan Çudamani to create gamelan music respectful to the culture.",
@@ -327,8 +331,9 @@
     },
     {
         "id": 7,
-        "has_live": false,
+        "has_live": true,
         "is_epic": false,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Salt%20and%20Sanctuary",
         "image_url": "../../../../assets/images/games/game-7.svg",
         "title": "Salt and Sacrifice",
         "about_game": "A once-peaceful kingdom is plunged into chaos by encroaching tides of Mages: merciless embodiments of elemental chaos. The Marked Inquisitors, a doomed force of the condemned, once again mobilizes to stand against the existential threat of Magic. A buried secret threatens to bring an ancient empire to utter ruin.As a Marked Inquisitor, you’ll journey through the western frontier: pursuing, hunting, and obliterating the Mages that roam the realm. You may be bound to the Inquisition, but your choices are yours.",
@@ -648,7 +653,8 @@
     {
         "id": 13,
         "is_epic": true,
-        "has_live": false,
+        "has_live": true,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Insurgency%3A%20Sandstorm",
         "image_url": "../../../../assets/images/games/game-13.svg",
         "title": "Insurgency",
         "about_game": "Insurgency is a multiplayer tactical first-person shooter video game developed and published by New World Interactive. It is a standalone sequel to Insurgency: At the beginning of each game, players are able to choose a class and select a variety of weapons. Players have a certain number of supply points to spend on purchasing weapons and modifications",
@@ -860,7 +866,7 @@
     {
         "id": 17,
         "is_epic": true,
-        "has_live": true,
+        "has_live": false,
         "image_url": "../../../../assets/images/games/game-17.svg",
         "title": "Zombie Army",
         "about_game": "The X-Ray Kill Cam feature from V2 also makes a return, in which when a successful and skilled shot is made, the camera will track the bullet from the sniper rifle to the target in slow motion, and upon impact will show an anatomically correct x-ray style reveal of the body part being hit and the damage the bullet causes to the organs and bones. Some items can also trigger an explosion when shot, which can be used to the player's advantage against the hordes of zombies. The game will also measure notable shots by briefly displaying distance and other factors like whether it was a head shot or moving target.",
@@ -962,6 +968,222 @@
             "../../../../assets/images/games/dying.jpg",
             "../../../../assets/images/games/dying-1.jpg",
             "../../../../assets/images/games/dying-2.jpg"
+        ]
+    },
+    {
+        "id": 19,
+        "is_epic": true,
+        "has_live": true,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Iratus%3A%20Lord%20of%20the%20Dead",
+        "image_url": "../../../../assets/images/games/game-19.svg",
+        "title": "Iratus",
+        "about_game": "ratus: Lord of the Dead is a dark, challenging turn-based roguelike RPG where you play as an evil necromancer escaping from your dungeon prison to once again embark on the domination of the world.",
+        "price": 30,
+        "sale": 10,
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-19.svg",
+        "more_image_url": [
+            "../../../../assets/images/games/iratus.jpg",
+            "../../../../assets/images/games/iratus-1.jpg",
+            "../../../../assets/images/games/iratus-2.jpg"
+        ]
+    },
+    {
+        "id": 20,
+        "is_epic": true,
+        "has_live": true,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V",
+        "image_url": "../../../../assets/images/games/game-20.svg",
+        "title": "Grand Theft Auto V",
+        "about_game": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV. The game blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the game’s three lead characters, playing all sides of the game’s interwoven story.",
+        "price": 30,
+        "sale": 10,
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-20.svg",
+        "more_image_url": [
+            "../../../../assets/images/games/gta.jpg",
+            "../../../../assets/images/games/gta-1.jpg",
+            "../../../../assets/images/games/gta-2.jpg"
+        ]
+    },
+    {
+        "id": 21,
+        "is_epic": true,
+        "has_live": true,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V",
+        "image_url": "../../../../assets/images/games/game-21.svg",
+        "title": "Grand Theft Auto V",
+        "about_game": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV. The game blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the game’s three lead characters, playing all sides of the game’s interwoven story.",
+        "price": 30,
+        "sale": 10,
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-21.svg",
+        "more_image_url": [
+            "../../../../assets/images/games/gta.jpg",
+            "../../../../assets/images/games/gta-1.jpg",
+            "../../../../assets/images/games/gta-2.jpg"
+        ]
+    },
+    {
+        "id": 22,
+        "is_epic": true,
+        "has_live": true,
+        "live_stream_url":"https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V",
+        "image_url": "../../../../assets/images/games/game-22.svg",
+        "title": "Grand Theft Auto V",
+        "about_game": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV. The game blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the game’s three lead characters, playing all sides of the game’s interwoven story.",
+        "price": 30,
+        "sale": 10,
+        "operation_system":[
+            "Windows 7 / 8 / 10",
+            "Windows 7 / 8 / 10",
+            "Windows 10"
+        ],
+        "processor":[
+            "Core i3-530 / AMD Athlon II X3 415e",
+            "Core i3-3210 / AMD Phenom II X4 910e",
+            "Core i5 3470 / AMD Athlon 240GE"
+        ],
+        "ram": [
+            "4GB",
+            "6GB",
+            "12GB"
+        ],
+        "video_card": [
+            "GeForce 250 GTS / Radeon HD 4850",
+            "GeForce 650 Ti / Radeon HD 5970",
+            "GeForce 1050 Ti / Radeon R9 380"
+        ],
+        "disc":"30GB",
+        "directX":[
+            "DirectX 10",
+            "DirectX 10",
+            "DirectX 11"
+        ],
+        "internet":"Stable channel with broadband data transmission",
+        "pve": [
+            "30",
+            "40",
+            "60"
+        ],
+        "pvp":[
+            "30",
+            "40",
+            "45"
+        ],
+        "cover_image_path": "../../../../assets/images/games/cover-22.svg",
+        "more_image_url": [
+            "../../../../assets/images/games/gta.jpg",
+            "../../../../assets/images/games/gta-1.jpg",
+            "../../../../assets/images/games/gta-2.jpg"
         ]
     }
     

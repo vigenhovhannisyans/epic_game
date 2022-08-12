@@ -87,6 +87,26 @@
     }
     .live-game-side{
         margin-top: 30px;
+        .see-all-live{
+                width: 200px;
+                height: 40px;
+                text-align: center;
+                background: #007aff;
+                display: block;
+                padding: 11px;
+                font-size: 19px;
+                font-weight: 500;
+                text-decoration: none;
+                color: white;
+                border-radius: 5px;
+                margin: 20px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .arrow-down{
+                    margin-left: 15px;
+                }
+        }
         .game-side{
             display: flex;
             align-items: center;
