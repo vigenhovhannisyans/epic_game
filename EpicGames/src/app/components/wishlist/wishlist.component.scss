@@ -160,3 +160,14 @@
     text-align: center;
     font-weight: 700;
 }
+.price-side{
+    height: 40px;
+    border: 1px solid #565656;
+    margin-bottom: 20px;
+    padding-top: 9px;   
+    .total-price{
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+}

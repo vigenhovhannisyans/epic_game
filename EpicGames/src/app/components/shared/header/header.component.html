@@ -41,9 +41,7 @@
                     <span class="user-name">Login</span>
                 </li>
                 <li [ngClass]="{'active': showLanguage}" class="language">
-                    <span class="language-item active">English</span>
-                    <span class="language-item">Russian</span>
-                    <span class="language-item">Armenian</span>
+                    <span *ngFor="let language of languages; let i = index" class="language-item" [ngClass]="{'active': selectedLanguage === i}" (click)="selectLanguage(language.title,i)">{{language.title}}</span>
                 </li>
             </ul>
         </div>

@@ -13,6 +13,7 @@ export class WishlistComponent implements OnInit {
   allGames!: Game[]
   filteredGames!: Game[]
   currentPage = 1
+  sumOfGames = 0;
   constructor(
     private allGamesService: GameService,
     private wishlistService: WishlistService
@@ -27,6 +28,7 @@ export class WishlistComponent implements OnInit {
     this.allGamesService.getAllGames().subscribe(gameEvent=>{
       this.allGames = gameEvent.filter(game => this.getIdsFromStorage().toString().includes(''+game.id))
       this.filteredGames = this.allGames
+      this.getSumOfGames()
     })
   }
 
@@ -50,6 +52,16 @@ export class WishlistComponent implements OnInit {
 
   getIdsFromStorage(): number[]{
     return this.wishlistService.getGameIdsFromLocalStorage()
+  }
+
+  getSumOfGames(): void{
+    this.allGames.map(game=>{
+      if(game.sale){
+        this.sumOfGames+= this.calculateSale(game.price, game.sale)
+      }else{
+        this.sumOfGames+=game.price
+      }
+    })
   }
 
 }

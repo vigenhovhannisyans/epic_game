@@ -1028,10 +1028,10 @@
         "id": 20,
         "is_epic": true,
         "has_live": true,
-        "live_stream_url":"https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V",
-        "image_url": "../../../../assets/images/games/game-20.svg",
-        "title": "Grand Theft Auto V",
-        "about_game": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV. The game blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the game’s three lead characters, playing all sides of the game’s interwoven story.",
+        "live_stream_url":"https://www.twitch.tv/directory/game/PUBG%20Mobile",
+        "image_url": "../../../../assets/images/games/game-20.jpg",
+        "title": "PlayerUnknown's Battlegrounds <PUBG>",
+        "about_game": "PUBG: Battlegrounds (previously known as PlayerUnknown's Battlegrounds) is a battle royale game developed and published by PUBG Studios, a subsidiary of Krafton. The game, which was inspired by the 2000 Japanese film Battle Royale, is based on previous mods created by Brendan PlayerUnknown Greene for other games, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island where they scavenge for weapons and equipment to kill other players while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into an ever tightening space to force encounters. The last surviving player (or team) wins the round. It is the first game in the PUBG Universe series.",
         "price": 30,
         "sale": 10,
         "operation_system":[
@@ -1071,11 +1071,11 @@
             "40",
             "45"
         ],
-        "cover_image_path": "../../../../assets/images/games/cover-20.svg",
+        "cover_image_path": "../../../../assets/images/games/cover-20.jpg",
         "more_image_url": [
-            "../../../../assets/images/games/gta.jpg",
-            "../../../../assets/images/games/gta-1.jpg",
-            "../../../../assets/images/games/gta-2.jpg"
+            "../../../../assets/images/games/pubg.jpg",
+            "../../../../assets/images/games/pubg-1.png",
+            "../../../../assets/images/games/pubg-2.jpg"
         ]
     },
     {
@@ -1138,7 +1138,7 @@
         "has_live": true,
         "live_stream_url":"https://www.twitch.tv/directory/game/Grand%20Theft%20Auto%20V",
         "image_url": "../../../../assets/images/games/game-22.svg",
-        "title": "Grand Theft Auto V",
+        "title": "Grand Theft Auto Online",
         "about_game": "Grand Theft Auto V is a vast open world game set in Los Santos, a sprawling sun-soaked metropolis struggling to stay afloat in an era of economic uncertainty and cheap reality TV. The game blends storytelling and gameplay in new ways as players repeatedly jump in and out of the lives of the game’s three lead characters, playing all sides of the game’s interwoven story.",
         "price": 30,
         "sale": 10,

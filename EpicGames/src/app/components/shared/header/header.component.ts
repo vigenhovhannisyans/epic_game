@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { translate } from '@angular/localize/src/utils';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
+import { Language } from 'src/app/core/models/language';
 import { AuthModalComponent } from '../auth-modal/auth-modal.component';
 @Component({
   selector: 'app-header',
@@ -9,6 +10,12 @@ import { AuthModalComponent } from '../auth-modal/auth-modal.component';
 })
 export class HeaderComponent implements OnInit {
   showLanguage = false
+  selectedLanguage = 0
+  languages: Language[]=[
+    {id: 1, title: 'English'},
+    {id: 2, title: 'Russian'},
+    {id: 3, title: 'Armenian'},
+  ]
   constructor(
    private authModal: MatDialog
   ) { }
@@ -40,6 +47,11 @@ export class HeaderComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
+  }
+
+  selectLanguage(lanugage: string, index: number){
+    this.selectedLanguage = index;
+    this.outsideClick()
   }
   
 

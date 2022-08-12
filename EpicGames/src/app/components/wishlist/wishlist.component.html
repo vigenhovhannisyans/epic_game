@@ -23,6 +23,11 @@
     <div class="game empty"></div>
     <div class="game empty"></div>
 </div>
+
+<div *ngIf="filteredGames.length !== 0" class="price-side container">
+<span class="total-price">Total: {{sumOfGames}}$</span>
+</div>
+
 <div *ngIf="filteredGames?.length === 0 && isSearch" class="no-result">OOPS` We don't have such a game</div>
 <div *ngIf="allGames?.length === 0" class="no-result">You have't added a game yet</div>
 <ng-container *ngIf="filteredGames?.length !== 0">
