@@ -1,0 +1,15 @@
+{
+    "header" : {
+        "home": "Главная",
+        "allGames": "Все игры",
+        "wishList": "Избранное",
+        "liveStreams": "Онлайн стримы",
+        "login": "Войти",
+        "logout": "Выйти"
+    },
+    "language":{
+        "English": "Английский",
+        "Russian": "Русский",
+        "Armenian": "Армянский"
+    }
+}

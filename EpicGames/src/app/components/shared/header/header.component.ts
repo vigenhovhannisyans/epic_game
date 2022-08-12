@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { translate } from '@angular/localize/src/utils';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
+import { TranslateService } from '@ngx-translate/core';
 import { Language } from 'src/app/core/models/language';
 import { AuthModalComponent } from '../auth-modal/auth-modal.component';
 @Component({
@@ -11,16 +12,20 @@ import { AuthModalComponent } from '../auth-modal/auth-modal.component';
 export class HeaderComponent implements OnInit {
   showLanguage = false
   selectedLanguage = 0
+  supportLanguages = ['en', 'ru']
   languages: Language[]=[
-    {id: 1, title: 'English'},
-    {id: 2, title: 'Russian'},
-    {id: 3, title: 'Armenian'},
+    {id: 1, title: 'English', short: 'en'},
+    {id: 2, title: 'Russian', short: 'ru'},
+    {id: 3, title: 'Armenian', short: 'am'},
   ]
   constructor(
-   private authModal: MatDialog
+   private authModal: MatDialog,
+   private translateService: TranslateService
   ) { }
 
   ngOnInit(): void {
+    this.translateService.addLangs(this.supportLanguages)
+    this.translateService.setDefaultLang('en')
   }
 
   showLanguageBlock(): void{
@@ -50,6 +55,7 @@ export class HeaderComponent implements OnInit {
   }
 
   selectLanguage(lanugage: string, index: number){
+    this.translateService.setDefaultLang(lanugage)
     this.selectedLanguage = index;
     this.outsideClick()
   }

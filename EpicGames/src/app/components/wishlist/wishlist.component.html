@@ -1,4 +1,5 @@
 <h2 class="wishlist-title">Wishlist</h2>
+
 <app-search (searchValueEmitter)="searchGame($event)"></app-search>
 <div class="all-games container">
     <div *ngFor="let game of filteredGames | paginate: { itemsPerPage: 8, currentPage: currentPage }" class="game" (click)="redirectToAboutGamePage(game.id)">

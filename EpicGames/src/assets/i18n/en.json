@@ -1,0 +1,15 @@
+{
+    "header" : {
+        "home": "Home",
+        "allGames": "All Games",
+        "wishList": "WishList",
+        "liveStreams": "Live Streams",
+        "login": "Login",
+        "logout": "Logout"
+    },
+    "language": {
+        "English": "English",
+        "Russian": "Russian",
+        "Armenian": "Armenian"
+    }
+}

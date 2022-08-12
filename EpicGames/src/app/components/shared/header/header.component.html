@@ -4,22 +4,22 @@
             <img src="../../../../assets/images/icons/logo.svg" alt="">
             <div  class="nav-side">
                 <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/home" class="item">
-                    Home
+                    {{'header.home' | translate}}
                     <span class="line"></span>
                 </a>
 
                 <a routerLink="/all-games" routerLinkActive="active" class="item">
-                    All Games
+                    {{'header.allGames' | translate}}
                     <span class="line"></span>
                 </a>
 
                 <a routerLink="/wishlist" routerLinkActive="active" class="item">
-                    Wishlist
+                    {{'header.wishList' | translate}}
                     <span class="line"></span>
                 </a>
 
                 <a routerLink="/live-games" routerLinkActive="active" class="item">
-                    Live Streams
+                    {{'header.liveStreams' | translate}}
                     <span class="live">LIVE</span>
                     <span class="line"></span>
                 </a>
@@ -38,10 +38,14 @@
                 </li>
 
                 <li (click)="openDialog()" class="list login">
-                    <span class="user-name">Login</span>
+                    <span class="user-name">
+                        {{'header.login' | translate}}
+                    </span>
                 </li>
                 <li [ngClass]="{'active': showLanguage}" class="language">
-                    <span *ngFor="let language of languages; let i = index" class="language-item" [ngClass]="{'active': selectedLanguage === i}" (click)="selectLanguage(language.title,i)">{{language.title}}</span>
+                    <span *ngFor="let language of languages; let i = index" class="language-item" [ngClass]="{'active': selectedLanguage === i}" (click)="selectLanguage(language.short,i)">
+                        {{language.title | translate}}
+                    </span>
                 </li>
             </ul>
         </div>
