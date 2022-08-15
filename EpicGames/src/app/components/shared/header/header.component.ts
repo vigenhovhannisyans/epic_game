@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { translate } from '@angular/localize/src/utils';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Language } from 'src/app/core/models/language';
 import { AuthModalComponent } from '../auth-modal/auth-modal.component';
@@ -11,6 +12,7 @@ import { AuthModalComponent } from '../auth-modal/auth-modal.component';
 })
 export class HeaderComponent implements OnInit {
   showLanguage = false
+  lang!:any
   selectedLanguage = 0
   supportLanguages = ['en', 'ru']
   languages: Language[]=[
@@ -20,19 +22,26 @@ export class HeaderComponent implements OnInit {
   ]
   constructor(
    private authModal: MatDialog,
-   private translateService: TranslateService
+   private translateService: TranslateService,
+   private route: Router,
+   private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
-    const lang = localStorage.getItem('language')
+    this.lang = localStorage.getItem('language')
     this.translateService.addLangs(this.supportLanguages)
 
-    if(lang !== null){
-      this.setSelectedLanguage(lang)
-      this.translateService.setDefaultLang(lang)
+    if(this.lang !== null){
+      this.setSelectedLanguage(this.lang)
+      this.translateService.setDefaultLang(this.lang)
     }else{
       this.translateService.setDefaultLang('en')
     }
+    this.activatedRoute.queryParams.subscribe((param: any)=>{
+      if(param.lang !==undefined){
+        this.translateService.use(param.lang)
+      }
+    })
   }
   
 
@@ -63,6 +72,7 @@ export class HeaderComponent implements OnInit {
   }
 
   selectLanguage(lanugage: string, index: number){
+    this.route.navigate([],{queryParams:{'lang': lanugage}})
     localStorage.setItem('language',lanugage)
     this.translateService.use(lanugage)
     this.selectedLanguage = index;
