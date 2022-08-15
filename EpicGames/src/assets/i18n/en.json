@@ -11,5 +11,65 @@
         "English": "English",
         "Russian": "Russian",
         "Armenian": "Armenian"
+    },
+    "register":{
+        "title": "Registration",
+        "name": "Name",
+        "surname": "Surname",
+        "email": "Email",
+        "password": "Password",
+        "register_btn": "Register",
+        "have_account": "Do you already have an account?",
+        "have_not_account": "don't you have an account yet?",
+        "login": "Login"
+    },
+    "watch_live":{
+        "title":"Watch Live"
+    },
+    "see_all":{
+        "title": "See All"
+    },
+
+    "footer":{
+        "home": "Home",
+        "about_us": "About Us",
+        "privacy_policy": "Privacy Policy",
+        "contact_us": "Contact Us",
+        "social_media": "Social Media",
+        "payment": "Payment",
+        "live_stream": "Live Streams",
+        "payment_privacy": "Payment Privacy",
+        "payment_methods": "Payment Methods",
+        "cards": "Credit cards",
+        "more": "More ..."
+    },
+    "home":{
+        "top_saled_games": "Top Saled Games",
+        "online_streams": "Live Strams"
+    },
+    "save_to_wishlist": "Save to Wishlist",
+    "download": "Download",
+    "total": "Total",
+    "epic": "Epic",
+    "epic_games": "Epic Games",
+    "old_price": "Old price",
+    "new_price": "New price",
+    "price": "Price",
+    "remove_wishlist": "Remove from Wishlist",
+    "system_requirement":{
+        "system": "System Requirements",
+        "operation_system": "Operation system",
+        "cpu":"Processor",
+        "ram": "RAM",
+        "video": "Video card",
+        "disc":"Hard Disc",
+        "version": "Version",
+        "internet": "Internet Connection",
+        "pve": "Expected average frame rate in PvE missions",
+        "pvp": "Expected average frame rate in PvP battles",
+        "low": "Low",
+        "medium": "Medium",
+        "high": "High"
     }
+    
 }

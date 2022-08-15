@@ -1,7 +1,7 @@
 <div (ngxOutsideClick)="outsideClick()" class="header">
     <div class="container header-side">
         <div class="left-side">
-            <img src="../../../../assets/images/icons/logo.svg" alt="">
+            <img class="logo" routerLink="/home" src="../../../../assets/images/icons/logo.svg" alt="">
             <div  class="nav-side">
                 <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/home" class="item">
                     {{'header.home' | translate}}
@@ -43,8 +43,8 @@
                     </span>
                 </li>
                 <li [ngClass]="{'active': showLanguage}" class="language">
-                    <span *ngFor="let language of languages; let i = index" class="language-item" [ngClass]="{'active': selectedLanguage === i}" (click)="selectLanguage(language.short,i)">
-                        {{language.title | translate}}
+                    <span *ngFor="let language1 of languages; let i = index" class="language-item" [ngClass]="{'active': selectedLanguage === i}" (click)="selectLanguage(language1.short,i)">
+                        {{'language.' + language1.title | translate}}
                     </span>
                 </li>
             </ul>

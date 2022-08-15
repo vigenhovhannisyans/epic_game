@@ -14,9 +14,9 @@ export class HeaderComponent implements OnInit {
   selectedLanguage = 0
   supportLanguages = ['en', 'ru']
   languages: Language[]=[
-    {id: 1, title: 'English', short: 'en'},
-    {id: 2, title: 'Russian', short: 'ru'},
-    {id: 3, title: 'Armenian', short: 'am'},
+    {id: 0, title: 'English', short: 'en'},
+    {id: 1, title: 'Russian', short: 'ru'},
+    {id: 2, title: 'Armenian', short: 'am'},
   ]
   constructor(
    private authModal: MatDialog,
@@ -24,9 +24,17 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    const lang = localStorage.getItem('language')
     this.translateService.addLangs(this.supportLanguages)
-    this.translateService.setDefaultLang('en')
+
+    if(lang !== null){
+      this.setSelectedLanguage(lang)
+      this.translateService.setDefaultLang(lang)
+    }else{
+      this.translateService.setDefaultLang('en')
+    }
   }
+  
 
   showLanguageBlock(): void{
     if(!this.showLanguage){
@@ -55,9 +63,18 @@ export class HeaderComponent implements OnInit {
   }
 
   selectLanguage(lanugage: string, index: number){
+    localStorage.setItem('language',lanugage)
     this.translateService.use(lanugage)
     this.selectedLanguage = index;
     this.outsideClick()
+  }
+
+  setSelectedLanguage(short: string): void{
+    this.languages.map(language => {
+      if(language.short === short){
+        this.selectedLanguage = language.id
+      }
+    })
   }
   
 

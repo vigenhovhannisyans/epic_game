@@ -1,19 +1,19 @@
 <div class="auth">
 <mat-dialog-content class="mat-typography">
     <h2 mat-dialog-title class="title">
-        <span *ngIf="!hasAccount; else loginText" >Registration</span>
+        <span *ngIf="!hasAccount; else loginText" >{{'register.title' | translate}}</span>
         <button mat-dialog-close class="close-modal">
             <img src="../../../../assets/images/icons/close.png" alt="">
         </button>
     </h2>
 <form *ngIf="!hasAccount; else login" class="auth-form" novalidate [formGroup]="registerForm">
     <div class="left-side">
-    <input [ngClass]="{'invalid':registerForm.controls['name'].invalid && registerForm.controls['name'].touched}" formControlName="name" type="text" class="input-field" placeholder="Name">
-    <input [ngClass]="{'invalid':registerForm.controls['surname'].invalid && registerForm.controls['surname'].touched}" formControlName="surname" type="text" class="input-field" placeholder="Surname">
-    <input [ngClass]="{'invalid':registerForm.controls['email'].invalid && registerForm.controls['email'].touched}" formControlName="email" type="text" class="input-field" placeholder="Email">
-    <input [ngClass]="{'invalid':registerForm.controls['password'].invalid && registerForm.controls['password'].touched}" formControlName="password" type="password" class="input-field" placeholder="Password">
-    <a class="login" (click)="openLoginPage()">Already have an account?</a>
-    <button (click)="register()" [ngClass]="{'disabled-btn': registerForm.invalid}" class="form-btn">Register</button>
+    <input [ngClass]="{'invalid':registerForm.controls['name'].invalid && registerForm.controls['name'].touched}" formControlName="name" type="text" class="input-field" placeholder="{{'register.name' | translate}}">
+    <input [ngClass]="{'invalid':registerForm.controls['surname'].invalid && registerForm.controls['surname'].touched}" formControlName="surname" type="text" class="input-field" placeholder="{{'register.surname' | translate}}">
+    <input [ngClass]="{'invalid':registerForm.controls['email'].invalid && registerForm.controls['email'].touched}" formControlName="email" type="text" class="input-field" placeholder="{{'register.email' | translate}}">
+    <input [ngClass]="{'invalid':registerForm.controls['password'].invalid && registerForm.controls['password'].touched}" formControlName="password" type="password" class="input-field" placeholder="{{'register.password' | translate}}">
+    <a class="login" (click)="openLoginPage()">{{'register.have_account' | translate}}</a>
+    <button (click)="register()" [ngClass]="{'disabled-btn': registerForm.invalid}" class="form-btn">{{'register.register_btn' | translate}}</button>
     </div>
     <div class="right-side">
         <img class="logo" src="../../../../assets/images/icons/logo.svg" alt="">
@@ -24,9 +24,9 @@
 <ng-template #login>
     <form class="auth-form" [formGroup]="loginForm">
         <div class="left-side">
-        <input [ngClass]="{'invalid':registerForm.controls['email'].invalid && registerForm.controls['name'].touched}" formControlName="email" type="email" class="input-field" placeholder="Email">
-        <input [ngClass]="{'invalid':registerForm.controls['password'].invalid && registerForm.controls['name'].touched}" formControlName="password" type="password" class="input-field" placeholder="Password">
-        <a class="login" (click)="openLoginPage()">Haven't account yet?</a>
+        <input [ngClass]="{'invalid':registerForm.controls['email'].invalid && registerForm.controls['name'].touched}" formControlName="email" type="email" class="input-field" placeholder="{{'register.email' | translate}}">
+        <input [ngClass]="{'invalid':registerForm.controls['password'].invalid && registerForm.controls['name'].touched}" formControlName="password" type="password" class="input-field" placeholder="{{'register.password' | translate}}">
+        <a class="login" (click)="openLoginPage()">{{'register.have_not_account' | translate}}</a>
         <button [ngClass]="{'disabled-btn': loginForm.invalid}" class="form-btn">Login</button>
         </div>
         <div class="right-side">

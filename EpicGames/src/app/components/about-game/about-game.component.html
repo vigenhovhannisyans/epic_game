@@ -11,7 +11,7 @@
 
     <div class="params">
         <div class="top-side">
-            <span class="system">System Requirements</span>
+            <span class="system">{{'system_requirement.system' | translate}}</span>
         </div>
 
         <div class="requirements">
@@ -22,45 +22,45 @@
                         <th colspan="3">Graphics settings at 1920*1080 resolution</th>
                     </tr>
                     <tr>
-                        <th>Low</th>
-                        <th>Medium</th>
-                        <th>High</th>
+                        <th>{{'system_requirement.low' | translate}}</th>
+                        <th>{{'system_requirement.medium' | translate}}</th>
+                        <th>{{'system_requirement.high' | translate}}</th>
                     </tr>
                     <tr>
-                        <td>Operating system</td>
+                        <td>{{'system_requirement.operation_system' | translate}}</td>
                         <td *ngFor="let operation of gameById.operation_system">{{operation}}</td>
                     </tr>
                     <tr>
-                        <td>Processor (CPU)</td>
+                        <td>{{'system_requirement.cpu' | translate}} (CPU)</td>
                         <td *ngFor="let processor of gameById.processor">{{processor}}</td>
                     </tr>
                     <tr>
-                        <td>RAM</td>
+                        <td>{{'system_requirement.ram' | translate}}</td>
                         <td *ngFor="let ram of gameById.ram">{{ram}}</td>
                     </tr>
                     <tr>
-                        <td>Video card (GPU)</td>
+                        <td>{{'system_requirement.video' | translate}} (GPU)</td>
                         <td *ngFor="let video_card of gameById.video_card">{{video_card}}</td>
                     </tr>
                     <tr>
-                        <td>Hard disc</td>
+                        <td>{{'system_requirement.disc' | translate}}</td>
                         <td class="gb-td" colspan="3">{{gameById.disc}}</td>
                     </tr>
                     <tr>
-                        <td>Version DirectX</td>
+                        <td>{{'system_requirement.version' | translate}} DirectX</td>
                         <td *ngFor="let directX of gameById.directX">{{directX}}</td>
                     </tr>
                     <tr>
-                        <td>Internet connection</td>
+                        <td>{{'system_requirement.internet' | translate}}</td>
                         <td class="gb-td" colspan="3">{{gameById.internet}}</td>
                     </tr>
                     <tr>
-                        <td>Expected average frame rate in PvE missions</td>
+                        <td>{{'system_requirement.pve' | translate}}</td>
                         <td *ngFor="let pve of gameById.pve">{{pve}}</td>
 
                     </tr>
                     <tr>
-                        <td>Expected average frame rate in PvP battles</td>
+                        <td>{{'system_requirement.pvp' | translate}}</td>
                         <td *ngFor="let pvp of gameById.pvp">{{pvp}}</td>
                     </tr>
                 </tbody>
@@ -75,15 +75,15 @@
                 <span class="price">{{calculateSale(gameById.price, gameById.sale)}}$</span>
                 </ng-container>
             </div>
-            <button class="download">Download</button>
-            <button *ngIf="!wishGamesId.toString().includes(''+gameById?.id); else remove" (click)="addToWishList(gameById.id, gameById.title)" class="download wishlist">Save to wishlist</button>
+            <button class="download">{{'download' | translate}}</button>
+            <button *ngIf="!wishGamesId.toString().includes(''+gameById?.id); else remove" (click)="addToWishList(gameById.id, gameById.title)" class="download wishlist">{{'save_to_wishlist' | translate}}</button>
         </div>
     </div>
 
     <ng-template #noSale>
-        <span class="price">Price: <span>{{gameById.price}}$ </span></span>
+        <span class="price">{{'price' | translate}}: <span>{{gameById.price}}$ </span></span>
     </ng-template>
     <ng-template #remove>
-        <button  (click)="removeFromWishList(gameById.id, gameById.title)" class="remove">Remove from Wishlist</button>
+        <button  (click)="removeFromWishList(gameById.id, gameById.title)" class="remove">{{'remove_wishlist' | translate}}</button>
      </ng-template>
 </div>
