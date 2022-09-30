@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, RequiredValidator, Validators } from '@angular/forms';
 import { User } from 'src/app/core/models/user';
+import {AuthService} from "../../../core/services/auth.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-auth-modal',
@@ -22,7 +24,10 @@ export class AuthModalComponent implements OnInit {
     'email': new FormControl('', [Validators.required, Validators.email]),
     'password': new FormControl('', Validators.required),
   })
-  constructor() {}
+  constructor(
+    private authService: AuthService,
+    private route: Router
+  ) {}
 
   ngOnInit(): void {
   }
@@ -32,9 +37,10 @@ export class AuthModalComponent implements OnInit {
   }
 
   register(): void{
-    this.user = this.registerForm.getRawValue()
-    this.user.token = 'asfasfasfasfasfasfasfasafasf'
-    console.log(this.user)
+    const user = this.registerForm.getRawValue()
+    user.token = 'this is a token'
+    this.authService.signUp(user)
+    this.route.navigate(['/account'])
   }
 
 }

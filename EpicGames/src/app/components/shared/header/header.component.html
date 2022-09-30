@@ -32,12 +32,12 @@
                     <img class="icon" src="../../../../assets/images/icons/language.svg" alt="">
                 </li>
 
-                <li class="list">
+                <li [routerLink]="'/account'" *ngIf="getUserAccess" class="list">
                     <img class="icon" src="../../../../assets/images/icons/user.svg" alt="">
-                    <span class="user-name">John</span>
+                    <span class="user-name">{{user.name}}</span>
                 </li>
 
-                <li (click)="openDialog()" class="list login">
+                <li *ngIf="!getUserAccess;else logoutSide" (click)="openDialog()" class="list login">
                     <span class="user-name">
                         {{'header.login' | translate}}
                     </span>
@@ -50,4 +50,11 @@
             </ul>
         </div>
     </div>
+  <ng-template #logoutSide>
+    <li (click)="logout()" class="list login">
+      <span class="user-name">
+        {{'header.logout' | translate}}
+      </span>
+    </li>
+  </ng-template>
 </div>

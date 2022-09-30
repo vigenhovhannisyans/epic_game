@@ -5,6 +5,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Language } from 'src/app/core/models/language';
 import { AuthModalComponent } from '../auth-modal/auth-modal.component';
+import {AuthService} from "../../../core/services/auth.service";
+import {User} from "../../../core/models/user";
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -12,7 +14,8 @@ import { AuthModalComponent } from '../auth-modal/auth-modal.component';
 })
 export class HeaderComponent implements OnInit {
   showLanguage = false
-  lang!:any
+  lang!:string
+  user!: User
   selectedLanguage = 0
   supportLanguages = ['en', 'ru']
   languages: Language[]=[
@@ -24,11 +27,13 @@ export class HeaderComponent implements OnInit {
    private authModal: MatDialog,
    private translateService: TranslateService,
    private route: Router,
-   private activatedRoute: ActivatedRoute
+   private activatedRoute: ActivatedRoute,
+   private authService: AuthService
   ) { }
 
   ngOnInit(): void {
-    this.lang = localStorage.getItem('language')
+    this.user = this.authService.getUser()
+    this.lang = <string>localStorage.getItem('language')
     this.translateService.addLangs(this.supportLanguages)
 
     if(this.lang !== null){
@@ -43,7 +48,7 @@ export class HeaderComponent implements OnInit {
       }
     })
   }
-  
+
 
   showLanguageBlock(): void{
     if(!this.showLanguage){
@@ -86,6 +91,15 @@ export class HeaderComponent implements OnInit {
       }
     })
   }
-  
+
+  get getUserAccess(): boolean{
+    return this.authService.getUserAccess()
+  }
+
+  logout(): void{
+  this.authService.deleteUser();
+  this.route.navigate([''])
+  }
+
 
 }

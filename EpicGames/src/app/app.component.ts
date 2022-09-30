@@ -23,7 +23,8 @@ export class AppComponent implements OnInit {
   checkUrl():void{
     this.router.events.subscribe(urlEvent=>{
       if(urlEvent instanceof NavigationEnd){
-        if(urlEvent.url.includes('/about-game')){
+        console.log(urlEvent.url);
+        if(urlEvent.url.includes('/about-game') ||urlEvent.url.includes('/account')){
           this.hideHotGameComponent = true
         }else{
           this.hideHotGameComponent = false
