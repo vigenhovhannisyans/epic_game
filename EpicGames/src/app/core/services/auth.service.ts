@@ -13,11 +13,9 @@ export class AuthService {
   getUserAccess(): boolean{
     return !!localStorage.getItem('auth-key');
   }
-
   getUser(): User{
     return JSON.parse(<string>localStorage.getItem('auth-key'))
   }
-
   deleteUser(): void{
     localStorage.removeItem('auth-key')
   }

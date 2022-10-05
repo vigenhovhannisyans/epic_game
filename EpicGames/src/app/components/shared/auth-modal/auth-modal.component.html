@@ -1,12 +1,12 @@
 <div class="auth">
 <mat-dialog-content class="mat-typography">
     <h2 mat-dialog-title class="title">
-        <span *ngIf="!hasAccount; else loginText" >{{'register.title' | translate}}</span>
+        <span *ngIf="hasAccount; else loginText" >{{'register.title' | translate}}</span>
         <button mat-dialog-close class="close-modal">
             <img src="../../../../assets/images/icons/close.png" alt="">
         </button>
     </h2>
-<form *ngIf="!hasAccount; else login" class="auth-form" novalidate [formGroup]="registerForm">
+<form *ngIf="hasAccount; else login" class="auth-form" novalidate [formGroup]="registerForm">
     <div class="left-side">
     <input [ngClass]="{'invalid':registerForm.controls['name'].invalid && registerForm.controls['name'].touched}" formControlName="name" type="text" class="input-field" placeholder="{{'register.name' | translate}}">
     <input [ngClass]="{'invalid':registerForm.controls['surname'].invalid && registerForm.controls['surname'].touched}" formControlName="surname" type="text" class="input-field" placeholder="{{'register.surname' | translate}}">

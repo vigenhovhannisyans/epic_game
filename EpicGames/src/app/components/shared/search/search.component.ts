@@ -11,7 +11,7 @@ export class SearchComponent implements OnInit {
   @Output() searchValueEmitter = new EventEmitter();
   searchForm:FormGroup = new FormGroup(
     {"search": new FormControl(),}
-  )
+  );
   constructor() { }
 
   ngOnInit(): void {
@@ -20,7 +20,7 @@ export class SearchComponent implements OnInit {
         debounceTime(500),
         distinctUntilChanged()
       )
-      .subscribe(searchLetter=> {
+      .subscribe(searchLetter => {
         this.searchValueEmitter.emit(searchLetter.search)
       });
   }

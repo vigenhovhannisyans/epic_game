@@ -4,25 +4,22 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class WishlistService {
-  gameId: any[] = []
+  gameId: number[] = [];
   constructor() { }
 
   addGameIdIntoStorage(id: number): void{
-    this.gameId.push(id) 
+    this.gameId.push(id) ;
     localStorage.setItem('wish-list', JSON.stringify(this.gameId));
   }
-
   removeIdFromLocalStorage(id: number): void{
-    this.getGameIdsFromLocalStorage()
+    this.getGameIdsFromLocalStorage();
     this.gameId = this.gameId.filter(elem => elem != id);
     this.fetchArrayIntoStorage(this.gameId)
   }
-
   getGameIdsFromLocalStorage(): number[]{
-    this.gameId = JSON.parse(localStorage.getItem('wish-list') || '[]')
+    this.gameId = JSON.parse(localStorage.getItem('wish-list') || '[]');
     return this.gameId
   }
-
   fetchArrayIntoStorage(ids: number[]): void{
     localStorage.setItem('wish-list', JSON.stringify(ids));
   }

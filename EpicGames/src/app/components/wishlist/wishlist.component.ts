@@ -1,18 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import { Game } from 'src/app/core/models/game';
 import { GameService } from 'src/app/core/services/game.service';
 import { WishlistService } from 'src/app/core/services/wishlist.service';
+import {Subject, takeUntil} from "rxjs";
 
 @Component({
   selector: 'app-wishlist',
   templateUrl: './wishlist.component.html',
   styleUrls: ['./wishlist.component.scss']
 })
-export class WishlistComponent implements OnInit {
+export class WishlistComponent implements OnInit, OnDestroy {
+  observersStream$ = new Subject<boolean>();
   isSearch = false;
-  allGames!: Game[]
-  filteredGames!: Game[]
-  currentPage = 1
+  allGames!: Game[];
+  filteredGames!: Game[];
+  currentPage = 1;
   sumOfGames = 0;
   constructor(
     private allGamesService: GameService,
@@ -20,14 +22,16 @@ export class WishlistComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getAllGames()
+    this.getAllGames();
     this.getIdsFromStorage()
   }
 
   getAllGames(): void{
-    this.allGamesService.getAllGames().subscribe(gameEvent=>{
-      this.allGames = gameEvent.filter(game => this.getIdsFromStorage().toString().includes(''+game.id))
-      this.filteredGames = this.allGames
+    this.allGamesService.getAllGames().pipe(
+      takeUntil(this.observersStream$)
+    ).subscribe(gameEvent => {
+      this.allGames = gameEvent.filter(game => this.getIdsFromStorage().toString().includes(''+game.id));
+      this.filteredGames = this.allGames;
       this.getSumOfGames()
     })
   }
@@ -37,11 +41,11 @@ export class WishlistComponent implements OnInit {
   }
 
   searchGame(event: string): void{
-    this.isSearch = true
-    this.currentPage = 1
-    this.filteredGames = this.allGames.filter(game => game.title.toLocaleLowerCase().includes(event.toLocaleLowerCase()))
+    this.isSearch = true;
+    this.currentPage = 1;
+    this.filteredGames = this.allGames.filter(game => game.title.toLocaleLowerCase().includes(event.toLocaleLowerCase()));
   }
-  
+
   redirectToAboutGamePage(id: number): void{
     this.allGamesService.redirectToAboutGamePage(id);
   }
@@ -62,6 +66,10 @@ export class WishlistComponent implements OnInit {
         this.sumOfGames+=game.price
       }
     })
+  }
+
+  ngOnDestroy(): void {
+    this.observersStream$.next(true)
   }
 
 }

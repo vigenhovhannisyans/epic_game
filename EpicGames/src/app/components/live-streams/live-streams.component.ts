@@ -8,9 +8,9 @@ import { GameService } from 'src/app/core/services/game.service';
   styleUrls: ['./live-streams.component.scss']
 })
 export class LiveStreamsComponent implements OnInit {
-  liveStream!: Game[]
-  filteredLive!: Game[]
-  currentPage = 1
+  liveStream!: Game[];
+  filteredLive!: Game[];
+  currentPage = 1;
   constructor(
     private gameService: GameService
   ) { }
@@ -22,7 +22,7 @@ export class LiveStreamsComponent implements OnInit {
 
   getLiveGames(): void{
     this.gameService.getAllGames().subscribe(game=>{
-      this.liveStream = game.filter(game=>game.has_live)
+      this.liveStream = game.filter(game=>game.has_live);
       this.filteredLive = this.liveStream
     })
   }
@@ -30,7 +30,7 @@ export class LiveStreamsComponent implements OnInit {
     this.currentPage = event
   }
   searchGame(event: string): void{
-    this.currentPage = 1
+    this.currentPage = 1;
     this.filteredLive = this.liveStream.filter(game => game.title.toLocaleLowerCase().includes(event.toLocaleLowerCase()))
   }
 }

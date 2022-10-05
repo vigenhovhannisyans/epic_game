@@ -2,11 +2,7 @@
     <span class="category-title">{{'home.top_saled_games' | translate}}</span>
 <ngx-slick-carousel class="carousel" 
 #slickModal="slick-carousel" 
-[config]="slideConfig" 
-(init)="slickInit($event)"
-(breakpoint)="breakpoint($event)"
-(afterChange)="afterChange($event)"
-(beforeChange)="beforeChange($event)">
+[config]="slideConfig">
 <ng-container *ngFor="let game of allGames">
 <div *ngIf="game.sale" ngxSlickItem  class="slide" (click)="showMoreAboutGame(game.id)">
 <img [src]="game.image_url" alt="" width="100%" height="248px" style="object-fit: cover;">
@@ -48,11 +44,7 @@
 
     <ngx-slick-carousel class="carousel" 
 #slickModal="slick-carousel" 
-[config]="slideConfig" 
-(init)="slickInit($event)"
-(breakpoint)="breakpoint($event)"
-(afterChange)="afterChange($event)"
-(beforeChange)="beforeChange($event)">
+[config]="slideConfig">
 <div ngxSlickItem *ngFor="let game of epicGames" class="slide" (click)="showMoreAboutGame(game.id)">
 <img [src]="game.image_url" alt="" width="100%" height="248px" style="object-fit: cover;">
 <span class="title">{{game.title}}</span>

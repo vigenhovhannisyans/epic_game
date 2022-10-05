@@ -9,9 +9,9 @@ import { GameService } from 'src/app/core/services/game.service';
 })
 export class AllGamesComponent implements OnInit {
   isSearch = false;
-  allGames!: Game[]
-  filteredGames!: Game[]
-  currentPage = 1
+  allGames!: Game[];
+  filteredGames!: Game[];
+  currentPage = 1;
   constructor(
     private allGamesService: GameService
   ) { }
@@ -22,7 +22,7 @@ export class AllGamesComponent implements OnInit {
 
   getAllGames(): void{
     this.allGamesService.getAllGames().subscribe(gameEvent=>{
-      this.allGames = gameEvent
+      this.allGames = gameEvent;
       this.filteredGames = this.allGames
     })
   }
@@ -32,9 +32,9 @@ export class AllGamesComponent implements OnInit {
   }
 
   searchGame(event: string): void{
-    this.isSearch = true
-    this.currentPage = 1
-    this.filteredGames = this.allGames.filter(game => game.title.toLocaleLowerCase().includes(event.toLocaleLowerCase()))
+    this.isSearch = true;
+    this.currentPage = 1;
+    this.filteredGames = this.allGames.filter(game => game.title.toLocaleLowerCase().includes(event.toLocaleLowerCase()));
   }
   
   redirectToAboutGamePage(id: number): void{
@@ -42,6 +42,6 @@ export class AllGamesComponent implements OnInit {
   }
 
   changePage(event: number): void{
-    this.currentPage = event
+    this.currentPage = event;
   }
 }

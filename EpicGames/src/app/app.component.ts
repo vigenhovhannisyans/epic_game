@@ -9,14 +9,14 @@ import { WishlistService } from './core/services/wishlist.service';
 })
 export class AppComponent implements OnInit {
   title = 'EpicGames';
-  hideHotGameComponent = false
+  hideHotGameComponent = false;
   constructor(
     private wishListService: WishlistService,
     private router: Router
   ){}
 
   ngOnInit(): void {
-    this.wishListService.getGameIdsFromLocalStorage()
+    this.wishListService.getGameIdsFromLocalStorage();
     this.checkUrl()
   }
 

@@ -9,7 +9,7 @@ import { GameService } from 'src/app/core/services/game.service';
 })
 export class HomeComponent implements OnInit {
   allGames!: Game[];
-  epicGames!: Game[]
+  epicGames!: Game[];
   showAllLiveGames = false;
   constructor(
     private gameService: GameService
@@ -55,33 +55,16 @@ export class HomeComponent implements OnInit {
     ]
   };
 
-  
-  slickInit(e: any) {
-    console.log('slick initialized');
-  }
-  
-  breakpoint(e: any) {
-    console.log('breakpoint');
-  }
-  
-  afterChange(e: any) {
-    console.log('afterChange');
-  }
-  
-  beforeChange(e: any) {
-    console.log('beforeChange');
-  }
-
   getAllGames(): void{
     this.gameService.getAllGames().subscribe(games => {
       this.allGames = games;
-      this.getAllEpicGames()
+      this.getAllEpicGames();
       this.getLiveGamesAndCalculateLength()
     })
   }
 
   calculateSale(price: number, sale: number): number{
-    return price * sale / 100
+    return price * sale / 100;
   }
 
   showMoreAboutGame(gameId: number): void{
@@ -89,12 +72,12 @@ export class HomeComponent implements OnInit {
   }
 
   getAllEpicGames(): void{
-    this.epicGames = this.allGames.filter(elem => elem.is_epic)
+    this.epicGames = this.allGames.filter(elem => elem.is_epic);
   }
 
   getLiveGamesAndCalculateLength(): void{
-    const liveGameLength = this.allGames.filter(game=> game.has_live).length
-    liveGameLength > 4 ? this.showAllLiveGames = true : this.showAllLiveGames = false
+    const liveGameLength = this.allGames.filter(game=> game.has_live).length;
+    liveGameLength > 4 ? this.showAllLiveGames = true : this.showAllLiveGames = false;
   }
 
 }

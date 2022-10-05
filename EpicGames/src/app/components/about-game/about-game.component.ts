@@ -13,8 +13,7 @@ import { WishlistService } from 'src/app/core/services/wishlist.service';
 export class AboutGameComponent implements OnInit {
   gameId!: number;
   gameById!: Game;
-  inWishList = false
-  wishGamesId!: number[]
+  wishGamesId!: number[];
   constructor(
     private activeRoute: ActivatedRoute,
     private gameService: GameService,
@@ -23,8 +22,8 @@ export class AboutGameComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getQueryParam()
-    this.getGameById()
+    this.getQueryParam();
+    this.getGameById();
     this.getGameIdFromStorage()
   }
 
@@ -42,28 +41,25 @@ export class AboutGameComponent implements OnInit {
     this.gameService.getAllGames().subscribe(game => {
       game.filter(game => {
         if(game.id === +this.gameId){
-          this.gameById = game
+          this.gameById = game;
           console.log(this.gameById)
         }
       })
-
     })
   }
 
   addToWishList(gameId: number, gameName: string): void{
-    this.toastr.success('Successfully added to your wishlist', `${gameName}`)
-    this.wishListService.addGameIdIntoStorage(gameId)
+    this.toastr.success('Successfully added to your wishlist', `${gameName}`);
+    this.wishListService.addGameIdIntoStorage(gameId);
   }
 
   getGameIdFromStorage(): void{
-    this.wishGamesId = this.wishListService.getGameIdsFromLocalStorage()
+    this.wishGamesId = this.wishListService.getGameIdsFromLocalStorage();
   }
 
   removeFromWishList(gameId: number, gameName: string): void{
-    this.toastr.success('Successfully removed from your wishlist', `${gameName}`)
-    this.wishListService.removeIdFromLocalStorage(gameId)
-    this.getGameIdFromStorage()
+    this.toastr.success('Successfully removed from your wishlist', `${gameName}`);
+    this.wishListService.removeIdFromLocalStorage(gameId);
+    this.getGameIdFromStorage();
   }
-
-
 }

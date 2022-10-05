@@ -13,16 +13,16 @@ import {User} from "../../../core/models/user";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  showLanguage = false
-  lang!:string
-  user!: User
-  selectedLanguage = 0
-  supportLanguages = ['en', 'ru']
+  showLanguage = false;
+  lang!:string;
+  user!: User;
+  selectedLanguage = 0;
+  supportLanguages = ['en', 'ru'];
   languages: Language[]=[
     {id: 0, title: 'English', short: 'en'},
     {id: 1, title: 'Russian', short: 'ru'},
     {id: 2, title: 'Armenian', short: 'am'},
-  ]
+  ];
   constructor(
    private authModal: MatDialog,
    private translateService: TranslateService,
@@ -32,18 +32,18 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.user = this.authService.getUser()
-    this.lang = <string>localStorage.getItem('language')
-    this.translateService.addLangs(this.supportLanguages)
+    this.user = this.authService.getUser();
+    this.lang = <string>localStorage.getItem('language');
+    this.translateService.addLangs(this.supportLanguages);
 
     if(this.lang !== null){
-      this.setSelectedLanguage(this.lang)
+      this.setSelectedLanguage(this.lang);
       this.translateService.setDefaultLang(this.lang)
     }else{
       this.translateService.setDefaultLang('en')
     }
     this.activatedRoute.queryParams.subscribe((param: any)=>{
-      if(param.lang !==undefined){
+      if(param.lang !== undefined){
         this.translateService.use(param.lang)
       }
     })
@@ -68,7 +68,7 @@ export class HeaderComponent implements OnInit {
       'width': '700px',
       'height': 'max-content',
       'panelClass': 'auth-modal'
-    }
+    };
     const dialogRef = this.authModal.open(AuthModalComponent,dialogConfig);
 
     dialogRef.afterClosed().subscribe(result => {
@@ -76,10 +76,10 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  selectLanguage(lanugage: string, index: number){
-    this.route.navigate([],{queryParams:{'lang': lanugage}})
-    localStorage.setItem('language',lanugage)
-    this.translateService.use(lanugage)
+  selectLanguage(language: string, index: number){
+    this.route.navigate([],{queryParams:{'lang': language}})
+    localStorage.setItem('language',language)
+    this.translateService.use(language)
     this.selectedLanguage = index;
     this.outsideClick()
   }
